@@ -2,7 +2,7 @@
 
 _This file is auto-loaded at the start of every Claude session via the `SessionStart` hook. Read it first to know what's already been done and what's pending. Claude MUST update this file at the end of every working session._
 
-_Last updated: 2026-04-15 (session 1, Run 5 end — 5 refresh cycles in one session)_
+_Last updated: 2026-04-15 (session 1, Run 6 end — 6 refresh cycles in one session)_
 
 ---
 
@@ -10,7 +10,7 @@ _Last updated: 2026-04-15 (session 1, Run 5 end — 5 refresh cycles in one sess
 
 - **URL**: https://github.com/demoleiwang/BenchLog
 - **Branch**: `main`
-- **Entries**: **36 benchmarks** across **7 active categories** (safety just opened); 1 digest (2026-04-15, 5 runs appended); cross-benchmark overview with 14 frontier models.
+- **Entries**: **41 benchmarks** across 7 active categories; 1 digest (2026-04-15, 6 runs appended); cross-benchmark overview with 14 frontier models.
 - **Architecture**: pure markdown + CLAUDE.md; Claude Code is the runtime. No Python, no scheduler, no scrapers.
 
 ## Owner / audience
@@ -29,19 +29,28 @@ _Last updated: 2026-04-15 (session 1, Run 5 end — 5 refresh cycles in one sess
 6. **Benchmark-relevance bar is high.**
 7. **Label scaffold / harness on every agent-benchmark score** — "BrowseComp 78.4%" means nothing without "(Agent Swarm)".
 
-## Current benchmark inventory (36)
+## Current benchmark inventory (41)
 
 | Category | Count | Entries |
 |---|---:|---|
-| Agent | 21 | GAIA, τ-bench (+ τ²-bench + TAU2 overall), OSWorld, WebArena, BrowseComp (+ BrowseComp-ZH), SWE-Lancer, MLE-Bench, GDPval, Terminal-Bench, BFCL, AgentBench, DeepSearchQA, WideSearch, DeepPlanning, VitaBench, Tool-Decathlon, MCPMark, MCP-Bench, DeepResearch-Bench, **ClawBench, SkillsBench** |
+| Agent | 26 | — see grouping below |
 | Coding | 6 | HumanEval, SWE-bench Verified, SWE-bench Pro, Multi-SWE-Bench, LiveCodeBench, ArtifactsBench |
 | Reasoning | 4 | GPQA Diamond, AIME 2025 (+ 2024 companion), ARC-AGI-2, HLE |
 | Knowledge | 2 | MMLU-Pro, SuperGPQA |
 | Multimodal | 2 | MMMU, MMMU-Pro |
 | Long-context | 1 | RULER |
-| **Safety** | 1 | **ClawsBench** (first entry — category activated) |
+| Safety | 1 | ClawsBench |
 
-Round 5 (2026-04-15) additions in **bold** — Claw family (ClawBench + ClawsBench) + SkillsBench. Safety category activated.
+### Agent sub-groups (26 entries)
+
+- **Assistant / general** (2): GAIA, AgentBench
+- **Tool use** (5): τ-bench (+ τ²-bench + TAU2 overall), BFCL, MCPMark, MCP-Bench, Tool-Decathlon
+- **GUI / Web / Mobile** (9): OSWorld, WebArena, VisualWebArena, **Mind2Web, Online-Mind2Web, AndroidWorld, ScreenSpot-Pro**, ClawBench, Terminal-Bench
+- **Deep research** (4): BrowseComp (+ BrowseComp-ZH), DeepSearchQA, WideSearch, DeepResearch-Bench
+- **Planning / skills** (3): DeepPlanning, SkillsBench, VitaBench
+- **Domain-specific** (3): SWE-Lancer, MLE-Bench, GDPval
+
+Round 6 (2026-04-15) additions in **bold** — 5 GUI-agent benchmarks (Mind2Web, Online-Mind2Web, AndroidWorld, VisualWebArena, ScreenSpot-Pro).
 
 ## Leaderboard coverage (sources ingested across all runs)
 
