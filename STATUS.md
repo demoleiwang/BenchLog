@@ -2,7 +2,7 @@
 
 _This file is auto-loaded at the start of every Claude session via the `SessionStart` hook. Read it first to know what's already been done and what's pending. Claude MUST update this file at the end of every working session._
 
-_Last updated: 2026-04-15 (session 1, Run 3 end — 3 refresh cycles in one session)_
+_Last updated: 2026-04-15 (session 1, Run 4 end — 4 refresh cycles in one session)_
 
 ---
 
@@ -10,7 +10,7 @@ _Last updated: 2026-04-15 (session 1, Run 3 end — 3 refresh cycles in one sess
 
 - **URL**: https://github.com/demoleiwang/BenchLog
 - **Branch**: `main`
-- **Entries**: **24 benchmarks** across 6 active categories; 1 digest (2026-04-15, 3 runs appended); cross-benchmark overview with 14 frontier models.
+- **Entries**: **33 benchmarks** across 6 active categories; 1 digest (2026-04-15, 4 runs appended); cross-benchmark overview with 14 frontier models.
 - **Architecture**: pure markdown + CLAUDE.md; Claude Code is the runtime. No Python, no scheduler, no scrapers.
 
 ## Owner / audience
@@ -29,17 +29,19 @@ _Last updated: 2026-04-15 (session 1, Run 3 end — 3 refresh cycles in one sess
 6. **Benchmark-relevance bar is high.**
 7. **Label scaffold / harness on every agent-benchmark score** — "BrowseComp 78.4%" means nothing without "(Agent Swarm)".
 
-## Current benchmark inventory (24)
+## Current benchmark inventory (33)
 
 | Category | Count | Entries |
 |---|---:|---|
-| Agent | 11 | GAIA, τ-bench (+ τ²-bench section + TAU2 overall), OSWorld, WebArena, BrowseComp (+ BrowseComp-ZH), SWE-Lancer, MLE-Bench, GDPval, Terminal-Bench, BFCL, AgentBench |
-| Coding | 5 | HumanEval, SWE-bench Verified, SWE-bench Pro, LiveCodeBench, ArtifactsBench |
+| Agent | 19 | GAIA, τ-bench (+ τ²-bench + TAU2 overall), OSWorld, WebArena, BrowseComp (+ BrowseComp-ZH), SWE-Lancer, MLE-Bench, GDPval, Terminal-Bench, BFCL, AgentBench, **DeepSearchQA, WideSearch, DeepPlanning, VitaBench, Tool-Decathlon, MCPMark, MCP-Bench, DeepResearch-Bench** |
+| Coding | 6 | HumanEval, SWE-bench Verified, SWE-bench Pro, **Multi-SWE-Bench**, LiveCodeBench, ArtifactsBench |
 | Reasoning | 4 | GPQA Diamond, AIME 2025 (+ 2024 companion), ARC-AGI-2, HLE |
+| Knowledge | 2 | MMLU-Pro, **SuperGPQA** |
 | Multimodal | 2 | MMMU, MMMU-Pro |
 | Long-context | 1 | RULER |
-| Knowledge | 1 | MMLU-Pro |
 | Safety | 0 | (directory exists, empty) |
+
+Round 4 (2026-04-15) additions in **bold** — 9 new benchmarks focused on agent / deep-research / multilingual coding per Lei's request.
 
 ## Leaderboard coverage (sources ingested across all runs)
 
