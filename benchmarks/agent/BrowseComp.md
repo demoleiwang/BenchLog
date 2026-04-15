@@ -34,11 +34,15 @@ _Source: [arXiv:2504.12516](https://arxiv.org/abs/2504.12516)._
 
 ## Leaderboard (snapshot)
 
-| Model / Agent | Accuracy | Date | Source |
+| Model / Agent | Accuracy | Source-reported-by | Source |
 |---|---:|---|---|
-| _seed pending_ | _unknown_ | _unknown_ | [openai.com/index/browsecomp](https://openai.com/index/browsecomp/) |
+| GPT-5 (thinking) | 54.9% | MiniMax-M2 card | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| MiniMax-M2 | 44% | own card, 2025-10 | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| Claude Sonnet 4.5 | 19.6% | MiniMax-M2 card | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| Claude Sonnet 4 | 12.2% | MiniMax-M2 card | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| Gemini 2.5 Pro | 9.9% | MiniMax-M2 card | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
 
-_OpenAI's own Deep Research agent is the headline-reporting system here; add source-linked rows when seeding from the BrowseComp paper tables and from subsequent reports._
+_The ~5× gap between GPT-5's 54.9% and MiniMax-M2's 44% vs. the others reflects BrowseComp's bias toward agents with deep-research scaffolding (persistent browsing + multi-step synthesis). Base-model scores without browsing scaffolds collapse toward zero._
 
 ## Critique & known issues
 
@@ -57,4 +61,4 @@ _OpenAI's own Deep Research agent is the headline-reporting system here; add sou
 
 ## Update log
 
-- 2026-04-15: Initial entry
+- 2026-04-15: Initial entry; seeded leaderboard with 5 rows (GPT-5, MiniMax-M2, Claude 4/4.5, Gemini 2.5 Pro) from MiniMax-M2 model card

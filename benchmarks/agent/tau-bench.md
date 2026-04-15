@@ -34,14 +34,40 @@ Retail domain: a user messages an assistant asking to return one item from a rec
 
 _Source: [github.com/sierra-research/tau-bench](https://github.com/sierra-research/tau-bench) — sample trajectories in the repo README._
 
+## τ-bench vs τ²-bench — disambiguation
+
+Most model launch reports from mid-2025 onward cite **"Tau2"** scores, which come from **τ²-bench** — the successor benchmark that adds a *telecom* domain to τ-bench's airline + retail and introduces a dual-control setting where the user can also execute tool calls. Practitioners often drop the "2" and write "τ-bench" for both. Rows below are labelled with the domain + source so you can recover which variant is meant.
+
 ## Leaderboard (snapshot)
 
-Headline numbers from the original paper; add source-linked rows as new agents report.
+Most-recent-first. Note metric (Avg@k vs. pass@k vs. pass^k) — consistency-style metrics (pass^k) are strictly stricter than average-style metrics.
+
+### τ-bench original (retail, airline)
 
 | Model / Agent | Metric | Score | Source |
 |---|---|---:|---|
 | GPT-4o (function calling) | pass@1 (retail) | < 50% | [arXiv:2406.12045](https://arxiv.org/abs/2406.12045) |
 | GPT-4o (function calling) | pass^8 (retail) | < 25% | [arXiv:2406.12045](https://arxiv.org/abs/2406.12045) |
+
+### τ²-bench (retail, airline, telecom)
+
+| Model | Domain | Metric | Score | Source |
+|---|---|---|---:|---|
+| Claude Opus 4 | retail | Avg@4 | 81.8 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Claude Sonnet 4 | retail | Avg@4 | 75.0 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| GPT-4.1 | retail | Avg@4 | 74.8 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Kimi K2 | retail | Avg@4 | 70.6 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| DeepSeek-V3 | retail | Avg@4 | 69.1 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Claude Opus 4 | airline | Avg@4 | 60.0 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Kimi K2 | airline | Avg@4 | 56.5 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Claude Sonnet 4 | airline | Avg@4 | 55.5 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| GPT-4.1 | airline | Avg@4 | 54.5 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| DeepSeek-V3 | airline | Avg@4 | 39.0 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Kimi K2 | telecom | Avg@4 | 65.8 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Claude Opus 4 | telecom | Avg@4 | 57.0 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Claude Sonnet 4 | telecom | Avg@4 | 45.2 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| GPT-4.1 | telecom | Avg@4 | 38.6 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| DeepSeek-V3 | telecom | Avg@4 | 32.5 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
 
 ## Critique & known issues
 
@@ -59,4 +85,4 @@ Headline numbers from the original paper; add source-linked rows as new agents r
 
 ## Update log
 
-- 2026-04-15: Initial entry
+- 2026-04-15: Initial entry; added τ²-bench disambiguation + seeded τ²-bench leaderboard (retail/airline/telecom, 15 rows) from Kimi K2 model card

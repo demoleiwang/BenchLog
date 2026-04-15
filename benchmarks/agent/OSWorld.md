@@ -38,10 +38,12 @@ _Source: sample tasks documented on [os-world.github.io](https://os-world.github
 
 | Model / Agent | Success | Date | Source |
 |---|---:|---|---|
+| Claude Sonnet 4.5 | 61.4% | 2025-09 | [anthropic.com/news/claude-sonnet-4-5](https://www.anthropic.com/news/claude-sonnet-4-5) |
+| Claude Sonnet 4 | 42.2% | 2025-05 | [anthropic.com/news/claude-sonnet-4-5](https://www.anthropic.com/news/claude-sonnet-4-5) |
 | Best agent at paper release | 12.24% | 2024-04 | [arXiv:2404.07972](https://arxiv.org/abs/2404.07972) |
 | Human | > 72.36% | 2024-04 | [arXiv:2404.07972](https://arxiv.org/abs/2404.07972) |
 
-_Computer-use agents launched in 2024–2025 (Anthropic's Claude with computer-use, OpenAI's "Operator", Google's Mariner-family) publish OSWorld numbers in their system cards; add source-linked rows when seeding from those reports._
+_Claude Sonnet 4.5's 61.4% represents a substantial leap over the same lab's Sonnet 4 four months prior (42.2%); the gap is driven largely by improved GUI-grounding and operational knowledge. Computer-use agents from OpenAI (Operator) and Google (Mariner family) also publish OSWorld numbers in their system cards — add rows when sourced._
 
 ## Critique & known issues
 
@@ -60,4 +62,4 @@ _Computer-use agents launched in 2024–2025 (Anthropic's Claude with computer-u
 
 ## Update log
 
-- 2026-04-15: Initial entry
+- 2026-04-15: Initial entry; added Claude Sonnet 4.5 (61.4%) and Sonnet 4 (42.2%) rows from Anthropic's 2025-09 launch blog

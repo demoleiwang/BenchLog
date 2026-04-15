@@ -49,11 +49,21 @@ _Source: [github.com/openai/human-eval/blob/master/data/example_problem.jsonl](h
 
 Entries require a sourced number. Reported numbers vary with sampling temperature and prompt style; cite the source harness.
 
-| Model | pass@1 | Date | Source |
-|-------|------:|------|--------|
-| Codex-12B (original) | 28.8% | 2021-07 | [arXiv:2107.03374](https://arxiv.org/abs/2107.03374) |
+Frontier anchors (HumanEval / HumanEval-Mul) — selected because the benchmark is saturated at the top. Newer entries go to the related LiveCodeBench / SWE-bench pages.
 
-_Frontier LLMs released after 2024 routinely report ≥ 90% pass@1; see each model's technical report for the exact number. This entry intentionally does not list every frontier score because the benchmark is saturated and no longer discriminative at the top._
+| Model | pass@1 | Variant | Source |
+|-------|------:|---|---|
+| DeepSeek-V3 | 82.6% | HumanEval-Mul chat | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| Claude 3.5 Sonnet | 81.7% | HumanEval-Mul chat (DeepSeek-reported) | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| GPT-4o (0513) | 80.5% | HumanEval-Mul chat (DeepSeek-reported) | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| Qwen2.5-72B | 77.3% | HumanEval-Mul chat (DeepSeek-reported) | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| LLaMA-3.1-405B | 77.2% | HumanEval-Mul chat (DeepSeek-reported) | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| DeepSeek-V3 | 65.2% | HumanEval base | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| LLaMA-3.1-405B | 54.9% | HumanEval base (DeepSeek-reported) | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| Qwen2.5-72B | 53.0% | HumanEval base (DeepSeek-reported) | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| Codex-12B (original) | 28.8% | HumanEval base | [arXiv:2107.03374](https://arxiv.org/abs/2107.03374) |
+
+_Saturated at the frontier. See [LiveCodeBench](LiveCodeBench.md) and [SWE-bench Verified](SWE-bench-Verified.md) for discriminative signal at the top._
 
 ## Critique & known issues
 
@@ -71,4 +81,4 @@ _Frontier LLMs released after 2024 routinely report ≥ 90% pass@1; see each mod
 
 ## Update log
 
-- 2026-04-15: Initial entry
+- 2026-04-15: Initial entry; seeded anchor scores (9 rows incl. DeepSeek-V3, Claude 3.5 Sonnet, GPT-4o, Qwen2.5-72B, LLaMA-3.1-405B, Codex-12B) from DeepSeek-V3 model card

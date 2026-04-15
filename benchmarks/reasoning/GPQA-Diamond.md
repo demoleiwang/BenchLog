@@ -38,13 +38,22 @@ _Source: [GPQA dataset on GitHub](https://github.com/idavidrein/gpqa)._
 
 ## Leaderboard (snapshot)
 
-Most-recent-first. Numbers vary meaningfully with prompt style (CoT vs. direct) and whether tools are used; cite the source.
+Most-recent-first. Numbers vary with prompt style (CoT vs. direct, Avg@8 vs. Pass@1); cite the source and the metric.
 
-| Model | Accuracy | Date | Source |
+| Model | Accuracy | Metric / source-reported-by | Source |
 |---|---:|---|---|
-| _seed pending_ | _unknown_ | _unknown_ | [github.com/idavidrein/gpqa](https://github.com/idavidrein/gpqa) |
+| Kimi K2 | 75.1% | Avg@8 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Claude Opus 4 | 74.9% | Avg@8 (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Claude Sonnet 4 | 70.0% | Avg@8 (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| DeepSeek-V3 | 68.4% | Avg@8 (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| GPT-4.1 | 66.3% | Avg@8 (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Claude 3.5 Sonnet | 65.0% | Pass@1 (DeepSeek-reported) | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| DeepSeek-V3 | 59.1% | Pass@1 (self-reported) | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| LLaMA-3.1-405B | 51.1% | Pass@1 (DeepSeek-reported) | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| GPT-4o (0513) | 49.9% | Pass@1 (DeepSeek-reported) | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| Qwen2.5-72B | 49.0% | Pass@1 (DeepSeek-reported) | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
 
-_Frontier launches since 2024 almost always cite a GPQA Diamond number; add rows with direct source links from model system cards._
+_DeepSeek-V3 appears twice (68.4 vs 59.1) because Kimi K2's team re-ran it Avg@8 while DeepSeek's own report uses Pass@1. Metric choice accounts for most of the gap._
 
 ## Critique & known issues
 
@@ -62,4 +71,4 @@ _Frontier launches since 2024 almost always cite a GPQA Diamond number; add rows
 
 ## Update log
 
-- 2026-04-15: Initial entry
+- 2026-04-15: Initial entry; seeded leaderboard with 10 model rows from DeepSeek-V3 and Kimi K2 model cards

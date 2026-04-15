@@ -38,11 +38,25 @@ _Source: [huggingface.co/datasets/TIGER-Lab/MMLU-Pro](https://huggingface.co/dat
 
 ## Leaderboard (snapshot)
 
-| Model | Accuracy | Date | Source |
-|---|---:|---|---|
-| _seed pending_ | _unknown_ | _unknown_ | [huggingface.co/datasets/TIGER-Lab/MMLU-Pro](https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro) |
+Cross-lab scores use different prompting schemes (direct vs. CoT vs. thinking-mode) and different metric (EM vs. Acc vs. AA composite). Don't compare across rows without reading the source.
 
-_Frontier model reports since mid-2024 typically include MMLU-Pro; add source-linked rows from model system cards / launch blogs._
+| Model | Accuracy | Metric / source-reported-by | Source |
+|---|---:|---|---|
+| Claude Sonnet 4.5 | 88 | AA composite | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| Claude Opus 4 | 86.6 | EM (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Claude Sonnet 4 | 84 | AA composite | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| Claude Sonnet 4 | 83.7 | EM (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| MiniMax-M2 | 82 | AA composite | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| GPT-4.1 | 81.8 | EM (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| DeepSeek-V3 | 81.2 | EM (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Kimi K2 | 81.1 | EM | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Claude 3.5 Sonnet | 78.0 | EM (DeepSeek-reported) | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| DeepSeek-V3 | 75.9 | EM (self-reported) | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| LLaMA-3.1-405B | 73.3 | EM (DeepSeek-reported) | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| GPT-4o (0513) | 72.6 | EM (DeepSeek-reported) | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| Qwen2.5-72B | 71.6 | EM (DeepSeek-reported) | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+
+_Note: DeepSeek-V3 appears with two scores (81.2 and 75.9) because the Kimi K2 team re-ran it in their harness (81.2) while DeepSeek's own report has 75.9. Both are legitimate; the divergence illustrates why we record the reporting lab._
 
 ## Critique & known issues
 
@@ -61,4 +75,4 @@ _Frontier model reports since mid-2024 typically include MMLU-Pro; add source-li
 
 ## Update log
 
-- 2026-04-15: Initial entry
+- 2026-04-15: Initial entry; seeded leaderboard with 13 model rows from DeepSeek-V3, Kimi K2, and MiniMax-M2 model cards. Noted the lab-harness divergence for DeepSeek-V3 (81.2 vs 75.9).

@@ -38,12 +38,19 @@ _Source: [arXiv:2311.12983](https://arxiv.org/abs/2311.12983), Appendix A._
 
 ## Leaderboard (snapshot)
 
-| Model / Agent | Overall Accuracy | Date | Source |
-|---|---:|---|---|
-| GPT-4 + plugins (original paper baseline) | ~15% | 2023-11 | [arXiv:2311.12983](https://arxiv.org/abs/2311.12983) |
-| Human | ~92% | 2023-11 | [arXiv:2311.12983](https://arxiv.org/abs/2311.12983) |
+Rows below are labelled with the modality variant. **GAIA (text only)** is the text-only subset quoted in recent agent tech reports; the full GAIA test set also includes multimodal items.
 
-_Current frontier agents routinely exceed 50–70% on the GAIA test set; see the [HF leaderboard](https://huggingface.co/spaces/gaia-benchmark/leaderboard) for live rankings and add source-linked rows._
+| Model / Agent | Variant | Accuracy | Source |
+|---|---|---:|---|
+| GPT-5 | text only | 76.4% | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| MiniMax-M2 | text only | 75.7% | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| Claude Sonnet 4.5 | text only | 71.2% | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| Claude Sonnet 4 | text only | 68.3% | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| Gemini 2.5 Pro | text only | 60.2% | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| Human | full (2023 paper) | ~92% | [arXiv:2311.12983](https://arxiv.org/abs/2311.12983) |
+| GPT-4 + plugins | full (2023 paper baseline) | ~15% | [arXiv:2311.12983](https://arxiv.org/abs/2311.12983) |
+
+_The text-only subset is easier than the full GAIA because it drops items requiring file parsing or vision; current frontier agents score 60–80% text-only, substantially lower on the full multimodal test. See the [HF leaderboard](https://huggingface.co/spaces/gaia-benchmark/leaderboard) for the full-set live rankings._
 
 ## Critique & known issues
 
@@ -63,4 +70,4 @@ _Current frontier agents routinely exceed 50–70% on the GAIA test set; see the
 
 ## Update log
 
-- 2026-04-15: Initial entry
+- 2026-04-15: Initial entry; added GAIA (text only) frontier-model rows (GPT-5, MiniMax-M2, Claude 4/4.5, Gemini 2.5 Pro) from MiniMax-M2 model card; kept original paper baselines for context

@@ -39,14 +39,29 @@ _Source: [github.com/princeton-nlp/SWE-bench](https://github.com/princeton-nlp/S
 
 ## Leaderboard (snapshot)
 
-Most-recent-first. Every row has a source link. Harness matters — we label the scaffold when the source does.
+Most-recent-first. Every row has a source link. Harness matters — we label the scaffold when the source does. Scores reported by different labs use different scaffolds and different trial counts; do NOT compare across rows without reading the source.
 
-| Model (harness) | % Resolved | Date | Source |
-|---|---:|---|---|
-| mini-SWE-agent v2 | 65% | 2025-07 | [swebench.com](https://www.swebench.com/) |
-| SWE-agent 1.0 (open-source SOTA on Lite, not Verified) | _see source_ | 2025-03 | [swebench.com](https://www.swebench.com/) |
+| Model | Harness / note | % Resolved | Source |
+|---|---|---:|---|
+| Claude Sonnet 4.5 (high-compute cfg) | Anthropic internal, 2025-09 | 82.0% | [anthropic.com/news/claude-sonnet-4-5](https://www.anthropic.com/news/claude-sonnet-4-5) |
+| Claude Sonnet 4.5 | Anthropic internal, avg of 10 trials, 2025-09 | 77.2% | [anthropic.com/news/claude-sonnet-4-5](https://www.anthropic.com/news/claude-sonnet-4-5) |
+| GPT-5 (thinking) | as reported in MiniMax-M2 card, 2025-10 | 74.9% | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| Claude Sonnet 4 | as reported in Kimi K2 card, agentic single attempt | 72.7% | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Claude Opus 4 | as reported in Kimi K2 card, agentic single attempt | 72.5% | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Kimi K2 | agentic, multiple attempts | 71.6% | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| MiniMax-M2 | as reported in own model card, 2025-10 | 69.4% | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| Kimi K2 | agentic, single attempt | 65.8% | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| mini-SWE-agent v2 | open-source agent | 65% | [swebench.com](https://www.swebench.com/) |
+| Gemini 2.5 Pro | as reported in MiniMax-M2 card | 63.8% | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| GPT-4.1 | as reported in Kimi K2 card, agentic single attempt | 54.6% | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Kimi K2 | agentless, single patch w/o test | 51.8% | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Claude 3.5 Sonnet | as reported in DeepSeek-V3 card, 2024-12 | 50.8% | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| DeepSeek-V3 | as reported in own card, 2024-12 | 42.0% | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| GPT-4o (0513) | as reported in DeepSeek-V3 card, 2024-12 | 38.8% | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| LLaMA-3.1-405B | as reported in DeepSeek-V3 card | 24.5% | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| Qwen2.5-72B | as reported in DeepSeek-V3 card | 23.8% | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
 
-_For current frontier scores, check the official [SWE-bench leaderboard](https://www.swebench.com/). Frontier-lab launch blogs for Claude Sonnet / Opus, GPT-5, and Gemini all report Verified scores; add rows with direct source links when seeded._
+_"As reported in X card" means the score was collected by lab X under their own harness; the absolute number may differ from Anthropic/OpenAI's self-reports. Cross-lab scores are not directly comparable._
 
 ## Critique & known issues
 
@@ -65,4 +80,4 @@ _For current frontier scores, check the official [SWE-bench leaderboard](https:/
 
 ## Update log
 
-- 2026-04-15: Initial entry
+- 2026-04-15: Initial entry; seeded leaderboard with 16 model rows from 4 sources (Anthropic Sonnet 4.5 blog, Kimi K2 model card, DeepSeek-V3 model card, MiniMax-M2 model card)

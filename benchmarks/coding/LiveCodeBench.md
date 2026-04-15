@@ -34,11 +34,25 @@ _Source: representative category per [livecodebench.github.io](https://livecodeb
 
 ## Leaderboard (snapshot)
 
-Scores are meaningless without a date-window. Always cite the window.
+Scores are meaningless without a date-window. Always cite the window. Rows below cluster by window: `v6` (commonly quoted in 2025 model cards), `CoT/standard` (DeepSeek-V3 card), and Artificial Analysis composite (AA).
 
-| Model | Score (pass@1) | Window | Source |
+| Model | Score (pass@1) | Window / note | Source |
 |---|---:|---|---|
-| _seed pending_ | _unknown_ | _unknown_ | [livecodebench.github.io](https://livecodebench.github.io/) |
+| MiniMax-M2 | 83 | AA composite | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| Claude Sonnet 4.5 | 71 | AA composite | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| Claude Sonnet 4 | 66 | AA composite | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| Kimi K2 | 53.7 | v6, Pass@1 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Claude Sonnet 4 | 48.5 | v6, Pass@1 (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Claude Opus 4 | 47.4 | v6, Pass@1 (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| DeepSeek-V3 | 46.9 | v6, Pass@1 (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| GPT-4.1 | 44.7 | v6, Pass@1 (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| DeepSeek-V3 | 40.5 | CoT, Pass@1, 2024-12 | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| DeepSeek-V3 | 37.6 | standard, Pass@1, 2024-12 | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| Claude 3.5 Sonnet | 36.3 | CoT, Pass@1, 2024-12 | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| GPT-4o (0513) | 33.4 | CoT, Pass@1, 2024-12 | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+| Qwen2.5-72B | 31.1 | CoT, Pass@1, 2024-12 | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |
+
+_"AA composite" refers to Artificial Analysis's blended-window LiveCodeBench metric, which aggregates several time windows; not directly comparable to a single-window v6 number._
 
 ## Critique & known issues
 
@@ -55,4 +69,4 @@ Scores are meaningless without a date-window. Always cite the window.
 
 ## Update log
 
-- 2026-04-15: Initial entry
+- 2026-04-15: Initial entry; seeded leaderboard with 13 model rows from DeepSeek-V3, Kimi K2, and MiniMax-M2 model cards
