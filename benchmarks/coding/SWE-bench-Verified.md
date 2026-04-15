@@ -53,6 +53,7 @@ Most-recent-first. Every row has a source link. Harness matters — we label the
 | Kimi K2 | agentic, single attempt | 65.8% | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
 | mini-SWE-agent v2 | open-source agent | 65% | [swebench.com](https://www.swebench.com/) |
 | Gemini 2.5 Pro | as reported in MiniMax-M2 card | 63.8% | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| GLM-4.5 | self-reported, 2025-08 | 64.2% | [arXiv:2508.06471](https://arxiv.org/abs/2508.06471) |
 | GPT-4.1 | as reported in Kimi K2 card, agentic single attempt | 54.6% | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
 | Kimi K2 | agentless, single patch w/o test | 51.8% | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
 | Claude 3.5 Sonnet | as reported in DeepSeek-V3 card, 2024-12 | 50.8% | [huggingface.co/deepseek-ai/DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) |

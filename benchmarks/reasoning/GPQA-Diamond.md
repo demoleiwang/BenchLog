@@ -42,6 +42,7 @@ Most-recent-first. Numbers vary with prompt style (CoT vs. direct, Avg@8 vs. Pas
 
 | Model | Accuracy | Metric / source-reported-by | Source |
 |---|---:|---|---|
+| Qwen3-235B-Instruct-2507 | 77.5% | self-reported, 2025-05 | [huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507) |
 | Kimi K2 | 75.1% | Avg@8 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
 | Claude Opus 4 | 74.9% | Avg@8 (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
 | Claude Sonnet 4 | 70.0% | Avg@8 (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |

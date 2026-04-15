@@ -42,6 +42,8 @@ Scores are meaningless without a date-window. Always cite the window. Rows below
 | Claude Sonnet 4.5 | 71 | AA composite | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
 | Claude Sonnet 4 | 66 | AA composite | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
 | Kimi K2 | 53.7 | v6, Pass@1 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
+| Qwen3-235B-Instruct-2507 | 51.8 | v6, Pass@1 | [huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507) |
+| Kimi K1.5 | 47.3 | short-CoT | [arXiv:2501.12599](https://arxiv.org/abs/2501.12599) |
 | Claude Sonnet 4 | 48.5 | v6, Pass@1 (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
 | Claude Opus 4 | 47.4 | v6, Pass@1 (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
 | DeepSeek-V3 | 46.9 | v6, Pass@1 (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |

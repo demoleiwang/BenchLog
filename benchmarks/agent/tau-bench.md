@@ -46,6 +46,7 @@ Most-recent-first. Note metric (Avg@k vs. pass@k vs. pass^k) — consistency-sty
 
 | Model / Agent | Metric | Score | Source |
 |---|---|---:|---|
+| GLM-4.5 | TAU-bench overall (domain(s) not specified in abstract) | 70.1% | [arXiv:2508.06471](https://arxiv.org/abs/2508.06471) |
 | GPT-4o (function calling) | pass@1 (retail) | < 50% | [arXiv:2406.12045](https://arxiv.org/abs/2406.12045) |
 | GPT-4o (function calling) | pass^8 (retail) | < 25% | [arXiv:2406.12045](https://arxiv.org/abs/2406.12045) |
 
