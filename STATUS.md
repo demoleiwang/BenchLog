@@ -2,7 +2,7 @@
 
 _This file is auto-loaded at the start of every Claude session via the `SessionStart` hook. Read it first to know what's already been done and what's pending. Claude MUST update this file at the end of every working session._
 
-_Last updated: 2026-04-15 (session 1, Run 6 end — 6 refresh cycles in one session)_
+_Last updated: 2026-04-15 (session 1, Run 7 end — 7 refresh cycles in one session)_
 
 ---
 
@@ -10,7 +10,7 @@ _Last updated: 2026-04-15 (session 1, Run 6 end — 6 refresh cycles in one sess
 
 - **URL**: https://github.com/demoleiwang/BenchLog
 - **Branch**: `main`
-- **Entries**: **41 benchmarks** across 7 active categories; 1 digest (2026-04-15, 6 runs appended); cross-benchmark overview with 14 frontier models.
+- **Entries**: **47 benchmarks** across 7 active categories; 1 digest (2026-04-15, 7 runs appended); cross-benchmark overview with 14 frontier models.
 - **Architecture**: pure markdown + CLAUDE.md; Claude Code is the runtime. No Python, no scheduler, no scrapers.
 
 ## Owner / audience
@@ -29,28 +29,29 @@ _Last updated: 2026-04-15 (session 1, Run 6 end — 6 refresh cycles in one sess
 6. **Benchmark-relevance bar is high.**
 7. **Label scaffold / harness on every agent-benchmark score** — "BrowseComp 78.4%" means nothing without "(Agent Swarm)".
 
-## Current benchmark inventory (41)
+## Current benchmark inventory (47)
 
 | Category | Count | Entries |
 |---|---:|---|
-| Agent | 26 | — see grouping below |
+| Agent | 28 | — see grouping below |
 | Coding | 6 | HumanEval, SWE-bench Verified, SWE-bench Pro, Multi-SWE-Bench, LiveCodeBench, ArtifactsBench |
-| Reasoning | 4 | GPQA Diamond, AIME 2025 (+ 2024 companion), ARC-AGI-2, HLE |
-| Knowledge | 2 | MMLU-Pro, SuperGPQA |
+| Reasoning | 7 | GPQA Diamond, AIME 2025 (+ 2024 companion), **HMMT 2025**, ARC-AGI-2, HLE, **FrontierMath**, **FrontierScience** |
+| Knowledge | 3 | MMLU-Pro, SuperGPQA, **HealthBench** |
 | Multimodal | 2 | MMMU, MMMU-Pro |
 | Long-context | 1 | RULER |
 | Safety | 1 | ClawsBench |
 
-### Agent sub-groups (26 entries)
+### Agent sub-groups (28 entries)
 
 - **Assistant / general** (2): GAIA, AgentBench
 - **Tool use** (5): τ-bench (+ τ²-bench + TAU2 overall), BFCL, MCPMark, MCP-Bench, Tool-Decathlon
-- **GUI / Web / Mobile** (9): OSWorld, WebArena, VisualWebArena, **Mind2Web, Online-Mind2Web, AndroidWorld, ScreenSpot-Pro**, ClawBench, Terminal-Bench
+- **GUI / Web / Mobile** (9): OSWorld, WebArena, VisualWebArena, Mind2Web, Online-Mind2Web, AndroidWorld, ScreenSpot-Pro, ClawBench, Terminal-Bench
 - **Deep research** (4): BrowseComp (+ BrowseComp-ZH), DeepSearchQA, WideSearch, DeepResearch-Bench
 - **Planning / skills** (3): DeepPlanning, SkillsBench, VitaBench
-- **Domain-specific** (3): SWE-Lancer, MLE-Bench, GDPval
+- **Domain-specific** (4): SWE-Lancer, MLE-Bench, **MLR-Bench**, GDPval
+- **Trajectory-aware eval** (1): **Claw-Eval**
 
-Round 6 (2026-04-15) additions in **bold** — 5 GUI-agent benchmarks (Mind2Web, Online-Mind2Web, AndroidWorld, VisualWebArena, ScreenSpot-Pro).
+Round 7 (2026-04-15) additions in **bold** — 6 entries from frontier-lab tech reports + Lei's "Claw-Eval, MLR-Bench, FrontierScience" prompt.
 
 ## Leaderboard coverage (sources ingested across all runs)
 
@@ -90,6 +91,10 @@ Versions confirmed via benchmark pages / leaderboards in session 1:
 - **MiniMax M2.7** — confirmed via PinchBench (89.8% best). Lei mentioned "minimax2.7" early in session 1 — now verified it exists.
 - **Qwen 3.5-27B** — smaller variant, on PinchBench at 90.0% best. (The 397B flagship was already in the inventory.)
 - **Trinity Large Thinking** (Arcee AI) — new frontier contender, PinchBench 91.9%.
+
+## Active discrepancies to verify
+
+- **Meta Muse Spark on HLE**: BenchLog has 58% (from a direct WebFetch of [ai.meta.com/blog/introducing-muse-spark-msl/](https://ai.meta.com/blog/introducing-muse-spark-msl/) in Run 3). Subsequent search-aggregator coverage (Run 7) consistently reports **50.2%**. Primary-source fetch may have mis-extracted; treat the 58% as suspect and re-verify by manual page read or alternative source. Same source for FrontierScience Research = 38% (Run 3) / 38.3% (Run 7) — close enough that rounding explains it; 50.2 vs 58 is not.
 
 ## Known sources that FAIL WebFetch
 
