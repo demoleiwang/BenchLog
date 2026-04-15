@@ -52,6 +52,17 @@ Most-recent-first. Note metric (Avg@k vs. pass@k vs. pass^k) — consistency-sty
 
 ### τ²-bench (retail, airline, telecom)
 
+Overall TAU2-Bench aggregate scores from frontier tech reports:
+
+| Model | Overall Score | Source-reported-by | Source |
+|---|---:|---|---|
+| Claude 4.5 Opus | 91.6 | Qwen3.5 card | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| GPT-5.2 | 87.1 | Qwen3.5 card | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| Qwen3.5-397B-A17B | 86.7 | self-reported, 2026-02 | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| Gemini 3 Pro | 85.4 | Qwen3.5 card | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+
+### τ²-bench per-domain (retail / airline / telecom) — older Avg@4 data from Kimi K2 card
+
 | Model | Domain | Metric | Score | Source |
 |---|---|---|---:|---|
 | Claude Opus 4 | retail | Avg@4 | 81.8 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
@@ -87,3 +98,4 @@ Most-recent-first. Note metric (Avg@k vs. pass@k vs. pass^k) — consistency-sty
 ## Update log
 
 - 2026-04-15: Initial entry; added τ²-bench disambiguation + seeded τ²-bench leaderboard (retail/airline/telecom, 15 rows) from Kimi K2 model card
+- 2026-04-15 (session 1 extension): added TAU2-Bench overall aggregate table with 4 frontier rows (Claude 4.5 Opus 91.6, GPT-5.2 87.1, Qwen3.5-397B 86.7, Gemini 3 Pro 85.4) from Qwen3.5 card

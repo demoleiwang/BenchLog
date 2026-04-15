@@ -42,6 +42,12 @@ Most-recent-first. Numbers vary with prompt style (CoT vs. direct, Avg@8 vs. Pas
 
 | Model | Accuracy | Metric / source-reported-by | Source |
 |---|---:|---|---|
+| GPT-5.2 (Kimi-reported) | 92.4% | — | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| Gemini 3 Pro (Kimi-reported) | 91.9% | — | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| Qwen3.5-397B-A17B | 88.4% | self-reported | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| Kimi K2.5 | 87.6% | self-reported | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| Claude 4.5 Opus (Kimi-reported) | 87.0% | — | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| DeepSeek V3.2 (Kimi-reported) | 82.4% | — | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
 | Qwen3-235B-Instruct-2507 | 77.5% | self-reported, 2025-05 | [huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507) |
 | Kimi K2 | 75.1% | Avg@8 | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
 | Claude Opus 4 | 74.9% | Avg@8 (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
@@ -73,3 +79,4 @@ _DeepSeek-V3 appears twice (68.4 vs 59.1) because Kimi K2's team re-ran it Avg@8
 ## Update log
 
 - 2026-04-15: Initial entry; seeded leaderboard with 10 model rows from DeepSeek-V3 and Kimi K2 model cards
+- 2026-04-15 (session 1 extension): added 6 frontier rows — GPT-5.2 (92.4), Gemini 3 Pro (91.9), Qwen3.5-397B (88.4), Kimi K2.5 (87.6), Claude 4.5 Opus (87.0), DeepSeek V3.2 (82.4)

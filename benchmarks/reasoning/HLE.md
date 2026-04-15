@@ -40,7 +40,19 @@ Values from the project's own reporting (see [lastexam.ai](https://lastexam.ai/)
 |---|---:|---|
 | MiroThinker-1.7 (235B) | 42.9% (HLE-Text) | [huggingface.co/miromind-ai/MiroThinker-1.7](https://huggingface.co/miromind-ai/MiroThinker-1.7) |
 | MiroThinker-v1.5-235B | 39.2% (HLE-Text) | [github.com/MiroMindAI/MiroThinker](https://github.com/MiroMindAI/MiroThinker) |
+| Meta Muse Spark (Contemplating mode) | 58% | [ai.meta.com/blog/introducing-muse-spark-msl](https://ai.meta.com/blog/introducing-muse-spark-msl/) |
+| Kimi K2.5 (w/ tools, HLE-Full) | 50.2% | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| Qwen3.5-397B-A17B (HLE w/ tool) | 48.3% | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| Gemini 3 Pro (HLE-Verified) | 48.0% | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| GPT-5.2 (HLE-Full w/ tools, Kimi-reported) | 45.5% | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| Gemini 3 Pro (HLE-Full w/ tools, Kimi-reported) | 45.8% | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| Claude 4.5 Opus (HLE-Full w/ tools, Kimi-reported) | 43.2% | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| MiroThinker-1.7 (235B) | 42.9% (HLE-Text) | [huggingface.co/miromind-ai/MiroThinker-1.7](https://huggingface.co/miromind-ai/MiroThinker-1.7) |
+| DeepSeek V3.2 (HLE-Full w/ tools, text-only, Kimi-reported) | 40.8% | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| MiroThinker-v1.5-235B | 39.2% (HLE-Text) | [github.com/MiroMindAI/MiroThinker](https://github.com/MiroMindAI/MiroThinker) |
 | Gemini 3 Pro | 38.3% | [lastexam.ai](https://lastexam.ai/) |
+| MiroThinker-v1.0-72B | 37.7% (HLE-Text) | [github.com/MiroMindAI/MiroThinker](https://github.com/MiroMindAI/MiroThinker) |
+| Qwen3.5-397B-A17B (base HLE) | 28.7% | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
 | MiroThinker-v1.0-72B | 37.7% (HLE-Text) | [github.com/MiroMindAI/MiroThinker](https://github.com/MiroMindAI/MiroThinker) |
 | GPT-5 | 25.3% | [lastexam.ai](https://lastexam.ai/) |
 | Grok 4 | 24.5% | [lastexam.ai](https://lastexam.ai/) |
@@ -64,3 +76,4 @@ Values from the project's own reporting (see [lastexam.ai](https://lastexam.ai/)
 ## Update log
 
 - 2026-04-15: Initial entry with reported scores from [lastexam.ai](https://lastexam.ai/)
+- 2026-04-15 (session 1 extension): added 10 new rows — Meta Muse Spark (58%, Contemplating mode), Kimi K2.5 (HLE-Full w/ tools 50.2), Qwen3.5-397B (HLE w/ tool 48.3, base 28.7), Gemini 3 Pro (HLE-Verified 48.0), GPT-5.2 / Claude 4.5 Opus / DeepSeek V3.2 (all Kimi-reported), MiroThinker family (v1.0/1.5/1.7)

@@ -42,7 +42,11 @@ The official leaderboard at [gorilla.cs.berkeley.edu/leaderboard.html](https://g
 
 | Model | Overall accuracy | Version | Source |
 |---|---:|---|---|
-| _live leaderboard — fetch current rows during daily update_ | _unknown_ | V4 | [gorilla.cs.berkeley.edu/leaderboard.html](https://gorilla.cs.berkeley.edu/leaderboard.html) |
+| Claude 4.5 Opus | 77.5 | V4 | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| Qwen3.5-397B-A17B | 72.9 | V4 | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| Gemini 3 Pro | 72.5 | V4 | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| GPT-5.2 | 63.1 | V4 | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| _live leaderboard — fetch additional rows during daily update_ | _unknown_ | V4 | [gorilla.cs.berkeley.edu/leaderboard.html](https://gorilla.cs.berkeley.edu/leaderboard.html) |
 
 ## Critique & known issues
 
@@ -62,3 +66,4 @@ The official leaderboard at [gorilla.cs.berkeley.edu/leaderboard.html](https://g
 ## Update log
 
 - 2026-04-15: Initial entry; v4 noted as current (released 2026-04-12). Leaderboard rows intentionally kept as pointer to live page — fetch during daily update when specific scores are needed.
+- 2026-04-15 (session 1 extension): added 4 V4 rows from Qwen3.5 card — Claude 4.5 Opus (77.5), Qwen3.5-397B (72.9), Gemini 3 Pro (72.5), GPT-5.2 (63.1)

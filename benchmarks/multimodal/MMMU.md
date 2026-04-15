@@ -40,11 +40,12 @@ _Source: [MMMU dataset viewer](https://huggingface.co/datasets/MMMU/MMMU)._
 
 ## Leaderboard (snapshot)
 
-| Model | Accuracy | Date | Source |
+| Model | Accuracy | Source-reported-by | Source |
 |---|---:|---|---|
-| _seed pending_ | _unknown_ | _unknown_ | [mmmu-benchmark.github.io](https://mmmu-benchmark.github.io/) |
-
-_Frontier multimodal models (GPT-5, Gemini 3 Pro, Claude with vision, Qwen-VL family) all report MMMU numbers in their launch materials; seed with source-linked rows._
+| Gemini 3 Pro | 87.2 | Qwen3.5 card | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| GPT-5.2 | 86.7 | Qwen3.5 card | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| Qwen3.5-397B-A17B | 85.0 | self-reported, 2026-02 | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| Claude 4.5 Opus | 80.7 | Qwen3.5 card | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
 
 ## Critique & known issues
 
@@ -65,3 +66,4 @@ _Frontier multimodal models (GPT-5, Gemini 3 Pro, Claude with vision, Qwen-VL fa
 ## Update log
 
 - 2026-04-15: Initial entry
+- 2026-04-15 (session 1 extension): seeded leaderboard with 4 frontier rows (Gemini 3 Pro 87.2, GPT-5.2 86.7, Qwen3.5-397B 85.0, Claude 4.5 Opus 80.7) from Qwen3.5 card

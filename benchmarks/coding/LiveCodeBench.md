@@ -38,6 +38,13 @@ Scores are meaningless without a date-window. Always cite the window. Rows below
 
 | Model | Score (pass@1) | Window / note | Source |
 |---|---:|---|---|
+| Gemini 3 Pro (Kimi-reported) | 87.4 | v6, Pass@1 | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| GPT-5.2 (Qwen-reported) | 87.7 | v6 | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| Kimi K2.5 | 85.0 | v6, Pass@1 | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| Claude 4.5 Opus (Qwen-reported) | 84.8 | v6 | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| Qwen3.5-397B-A17B | 83.6 | v6 | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| DeepSeek V3.2 (Kimi-reported) | 83.3 | v6, Pass@1 | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| Claude 4.5 Opus (Kimi-reported) | 82.2 | v6, Pass@1 | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
 | MiniMax-M2 | 83 | AA composite | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
 | Claude Sonnet 4.5 | 71 | AA composite | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
 | Claude Sonnet 4 | 66 | AA composite | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
@@ -72,3 +79,4 @@ _"AA composite" refers to Artificial Analysis's blended-window LiveCodeBench met
 ## Update log
 
 - 2026-04-15: Initial entry; seeded leaderboard with 13 model rows from DeepSeek-V3, Kimi K2, and MiniMax-M2 model cards
+- 2026-04-15 (session 1 extension): added 7 frontier rows — GPT-5.2 (87.7), Gemini 3 Pro (87.4), Kimi K2.5 (85.0), Claude 4.5 Opus (84.8/82.2), Qwen3.5-397B (83.6), DeepSeek V3.2 (83.3)

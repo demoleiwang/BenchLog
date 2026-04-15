@@ -37,7 +37,13 @@ The official leaderboard is at [tbench.ai/leaderboard/terminal-bench/2.0](https:
 
 | Model / Agent | Score (Terminal-Bench 2.0) | Source |
 |---|---:|---|
+| Claude 4.5 Opus (Kimi-reported) | 59.3 | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| GPT-5.2 (Kimi-reported) | 54.0 | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| Gemini 3 Pro (Kimi-reported) | 54.2 | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| Qwen3.5-397B-A17B | 52.5 | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| Kimi K2.5 | 50.8 | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
 | Claude Sonnet 4.5 | 50 | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| DeepSeek V3.2 (Kimi-reported) | 46.4 | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
 | MiniMax-M2 | 46.3 | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
 | GPT-5 (thinking) | 43.8 | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
 | Claude Sonnet 4 | 36.4 | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
@@ -63,3 +69,4 @@ _Cite the official [tbench.ai leaderboard](https://www.tbench.ai/leaderboard) wh
 ## Update log
 
 - 2026-04-15: Initial entry; seeded leaderboard with 5 rows (Claude Sonnet 4/4.5, MiniMax-M2, GPT-5 thinking, Gemini 2.5 Pro) from MiniMax-M2 model card
+- 2026-04-15 (session 1 extension): added 6 frontier rows (Claude 4.5 Opus 59.3, GPT-5.2 54.0, Gemini 3 Pro 54.2, Qwen3.5-397B 52.5, Kimi K2.5 50.8, DeepSeek V3.2 46.4) from Kimi K2.5 and Qwen3.5 cards

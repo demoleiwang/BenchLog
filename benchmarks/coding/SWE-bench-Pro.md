@@ -36,7 +36,10 @@ _Source: [labs.scale.com/papers/swe-bench-pro](https://labs.scale.com/papers/swe
 
 | Model | pass@1 | Tier / note | Source |
 |---|---:|---|---|
-| GPT-5 | 23.3% | top-scoring at launch | [labs.scale.com/papers/swe-bench-pro](https://labs.scale.com/papers/swe-bench-pro) |
+| GPT-5.2 | 55.6 | as reported in Kimi K2.5 card | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| Claude 4.5 Opus | 55.4 | as reported in Kimi K2.5 card | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| Kimi K2.5 | 50.7 | self-reported, 2026-01-29 | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| GPT-5 | 23.3% | top-scoring at launch, 2025-09 | [labs.scale.com/papers/swe-bench-pro](https://labs.scale.com/papers/swe-bench-pro) |
 | GLM-4.5 | 9.67 | as reported in GLM-4.6 card | [huggingface.co/zai-org/GLM-4.6](https://huggingface.co/zai-org/GLM-4.6) |
 
 _Scale Labs' launch write-up notes that "widely used coding models generally score below 25%." This is ~3× harder than SWE-bench Verified where frontier models cluster 70–82%._
@@ -59,3 +62,4 @@ _Scale Labs' launch write-up notes that "widely used coding models generally sco
 ## Update log
 
 - 2026-04-15: Initial entry; seeded leaderboard with GPT-5 (23.3%) from Scale Labs launch, GLM-4.5 (9.67) from GLM-4.6 model card
+- 2026-04-15 (session 1 extension): added 3 frontier rows from Kimi K2.5 card — GPT-5.2 (55.6), Claude 4.5 Opus (55.4), Kimi K2.5 (50.7). Note the huge jump from the 2025-09 launch figure (23.3%) reflects scaffold + model progress over ~4 months.

@@ -44,6 +44,12 @@ Most-recent-first. Every row has a source link. Harness matters — we label the
 | Model | Harness / note | % Resolved | Source |
 |---|---|---:|---|
 | Claude Sonnet 4.5 (high-compute cfg) | Anthropic internal, 2025-09 | 82.0% | [anthropic.com/news/claude-sonnet-4-5](https://www.anthropic.com/news/claude-sonnet-4-5) |
+| Claude 4.5 Opus | as reported in Kimi K2.5 card | 80.9% | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| GPT-5.2 | as reported in Kimi K2.5 card | 80.0% | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| Kimi K2.5 | self-reported, 2026-01-29 | 76.8% | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| Qwen3.5-397B-A17B | self-reported, 2026-02 | 76.4% | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| Gemini 3 Pro | as reported in Kimi K2.5 card | 76.2% | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| DeepSeek V3.2 | as reported in Kimi K2.5 card | 73.1% | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
 | Claude Sonnet 4.5 | Anthropic internal, avg of 10 trials, 2025-09 | 77.2% | [anthropic.com/news/claude-sonnet-4-5](https://www.anthropic.com/news/claude-sonnet-4-5) |
 | GPT-5 (thinking) | as reported in MiniMax-M2 card, 2025-10 | 74.9% | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
 | Claude Sonnet 4 | as reported in Kimi K2 card, agentic single attempt | 72.7% | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
@@ -82,3 +88,4 @@ _"As reported in X card" means the score was collected by lab X under their own 
 ## Update log
 
 - 2026-04-15: Initial entry; seeded leaderboard with 16 model rows from 4 sources (Anthropic Sonnet 4.5 blog, Kimi K2 model card, DeepSeek-V3 model card, MiniMax-M2 model card)
+- 2026-04-15 (session 1 extension): added 6 frontier rows — Claude 4.5 Opus (80.9%), GPT-5.2 (80.0%), Kimi K2.5 (76.8%), Qwen3.5-397B (76.4%), Gemini 3 Pro (76.2%), DeepSeek V3.2 (73.1%). Sources: Kimi K2.5 and Qwen3.5 model cards.

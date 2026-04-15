@@ -42,7 +42,13 @@ Cross-lab scores use different prompting schemes (direct vs. CoT vs. thinking-mo
 
 | Model | Accuracy | Metric / source-reported-by | Source |
 |---|---:|---|---|
+| Gemini 3 Pro (Qwen-reported / Kimi-reported) | 89.8 / 90.1 | — | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| Claude 4.5 Opus (Qwen-reported / Kimi-reported) | 89.5 / 89.3 | — | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
 | Claude Sonnet 4.5 | 88 | AA composite | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| Qwen3.5-397B-A17B | 87.8 | self-reported, 2026-02 | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| GPT-5.2 (Qwen-reported / Kimi-reported) | 87.4 / 86.7 | — | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| Kimi K2.5 | 87.1 | self-reported, 2026-01-29 | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| DeepSeek V3.2 (Kimi-reported) | 85.0 | — | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
 | Claude Opus 4 | 86.6 | EM (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
 | Claude Sonnet 4 | 84 | AA composite | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
 | Claude Sonnet 4 | 83.7 | EM (Kimi-reported) | [huggingface.co/moonshotai/Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct) |
@@ -77,3 +83,4 @@ _Note: DeepSeek-V3 appears with two scores (81.2 and 75.9) because the Kimi K2 t
 ## Update log
 
 - 2026-04-15: Initial entry; seeded leaderboard with 13 model rows from DeepSeek-V3, Kimi K2, and MiniMax-M2 model cards. Noted the lab-harness divergence for DeepSeek-V3 (81.2 vs 75.9).
+- 2026-04-15 (session 1 extension): added 7 frontier rows — Gemini 3 Pro (89.8/90.1), Claude 4.5 Opus (89.5/89.3), Qwen3.5-397B (87.8), GPT-5.2 (87.4/86.7), Kimi K2.5 (87.1), DeepSeek V3.2 (85.0). Each model that appears in both Kimi K2.5 and Qwen3.5 tables shows both numbers for transparency.

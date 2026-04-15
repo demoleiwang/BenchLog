@@ -42,7 +42,12 @@ Reported frontier scores from the paper + subsequent updates; cite the source an
 
 | Model | Score | Setting | Source |
 |---|---:|---|---|
-| Launch-era frontier range | 16.8–26.9% | across setting variants | [arXiv:2409.02813](https://arxiv.org/abs/2409.02813) |
+| Gemini 3 Pro (Qwen-reported) | 81.0 | standard | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| GPT-5.2 (Qwen-reported / Kimi-reported) | 79.5 | standard | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| Qwen3.5-397B-A17B | 79.0 | standard | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
+| Kimi K2.5 | 78.5 | standard | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| Claude 4.5 Opus (Kimi-reported / Qwen-reported) | 74.0 / 70.6 | standard | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| Launch-era frontier range (2024) | 16.8–26.9% | across setting variants | [arXiv:2409.02813](https://arxiv.org/abs/2409.02813) |
 
 _Newer model launches (Claude 4 series, GPT-5, Gemini 3 Pro) often report MMMU-Pro; add source-linked rows when ingesting from system cards._
 
@@ -64,3 +69,4 @@ _Newer model launches (Claude 4 series, GPT-5, Gemini 3 Pro) often report MMMU-P
 ## Update log
 
 - 2026-04-15: Initial entry
+- 2026-04-15 (session 1 extension): seeded leaderboard with 5 frontier rows (Gemini 3 Pro 81.0, GPT-5.2 79.5, Qwen3.5-397B 79.0, Kimi K2.5 78.5, Claude 4.5 Opus 74.0/70.6) from Kimi K2.5 and Qwen3.5 cards
