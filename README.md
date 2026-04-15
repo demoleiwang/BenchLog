@@ -43,11 +43,11 @@ No PDFs are stored. Every claim links to its source.
 
 ### Latest digests
 
-- _no digests yet — first run pending_
+- [2026-04-15](digests/2026-04-15.md) — bootstrap seed (17 entries); first daily-update cycle test; flagged LARY / ClawGUI / Habitat-GS as trending
 
 ### Recently updated entries
 
-- _populated after first daily run_
+- [MMMU](benchmarks/multimodal/MMMU.md) · [MMLU-Pro](benchmarks/knowledge/MMLU-Pro.md) · [GDPval](benchmarks/agent/GDPval.md) · [MLE-Bench](benchmarks/agent/MLE-Bench.md) · [SWE-Lancer](benchmarks/agent/SWE-Lancer.md)
 
 ## Repository layout
 
