@@ -33,12 +33,12 @@ No PDFs are stored. Every claim links to its source.
 
 | Category | Benchmarks |
 |---|---|
-| **[Coding](benchmarks/coding/)** | [HumanEval](benchmarks/coding/HumanEval.md), [SWE-bench Verified](benchmarks/coding/SWE-bench-Verified.md), [LiveCodeBench](benchmarks/coding/LiveCodeBench.md) |
+| **[Coding](benchmarks/coding/)** | [HumanEval](benchmarks/coding/HumanEval.md), [SWE-bench Verified](benchmarks/coding/SWE-bench-Verified.md), [SWE-bench Pro](benchmarks/coding/SWE-bench-Pro.md), [LiveCodeBench](benchmarks/coding/LiveCodeBench.md), [ArtifactsBench](benchmarks/coding/ArtifactsBench.md) |
 | **[Reasoning](benchmarks/reasoning/)** | [GPQA Diamond](benchmarks/reasoning/GPQA-Diamond.md), [AIME 2025](benchmarks/reasoning/AIME-2025.md), [ARC-AGI-2](benchmarks/reasoning/ARC-AGI-2.md), [HLE](benchmarks/reasoning/HLE.md) |
-| **[Agent](benchmarks/agent/)** | [GAIA](benchmarks/agent/GAIA.md), [τ-bench](benchmarks/agent/tau-bench.md), [OSWorld](benchmarks/agent/OSWorld.md), [WebArena](benchmarks/agent/WebArena.md), [BrowseComp](benchmarks/agent/BrowseComp.md), [SWE-Lancer](benchmarks/agent/SWE-Lancer.md), [MLE-Bench](benchmarks/agent/MLE-Bench.md), [GDPval](benchmarks/agent/GDPval.md) |
+| **[Agent](benchmarks/agent/)** | [GAIA](benchmarks/agent/GAIA.md), [τ-bench](benchmarks/agent/tau-bench.md), [OSWorld](benchmarks/agent/OSWorld.md), [WebArena](benchmarks/agent/WebArena.md), [BrowseComp](benchmarks/agent/BrowseComp.md), [SWE-Lancer](benchmarks/agent/SWE-Lancer.md), [MLE-Bench](benchmarks/agent/MLE-Bench.md), [GDPval](benchmarks/agent/GDPval.md), [Terminal-Bench](benchmarks/agent/Terminal-Bench.md), [BFCL](benchmarks/agent/BFCL.md), [AgentBench](benchmarks/agent/AgentBench.md) |
 | **[Knowledge](benchmarks/knowledge/)** | [MMLU-Pro](benchmarks/knowledge/MMLU-Pro.md) |
-| **[Multimodal](benchmarks/multimodal/)** | [MMMU](benchmarks/multimodal/MMMU.md) |
-| **[Long context](benchmarks/long-context/)** | _seeded soon_ |
+| **[Multimodal](benchmarks/multimodal/)** | [MMMU](benchmarks/multimodal/MMMU.md), [MMMU-Pro](benchmarks/multimodal/MMMU-Pro.md) |
+| **[Long context](benchmarks/long-context/)** | [RULER](benchmarks/long-context/RULER.md) |
 | **[Safety](benchmarks/safety/)** | _seeded soon_ |
 
 ### Latest digests
