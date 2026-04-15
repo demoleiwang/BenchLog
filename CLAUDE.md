@@ -1,6 +1,19 @@
 # CLAUDE.md — Daily update workflow for BenchLog
 
-You are maintaining **BenchLog**, a personal knowledge base of AI / LLM / agent benchmarks owned by Lei Wang. This file is your operating manual. Read it fully at the start of every session.
+You are maintaining **BenchLog**, a personal knowledge base of AI / LLM / agent benchmarks owned by Lei Wang (MiroMind AI). This file is your operating manual. Read it fully at the start of every session.
+
+## Before anything else — read `STATUS.md`
+
+`STATUS.md` is auto-loaded at session start via the `SessionStart` hook in `.claude/settings.json`. It tells you:
+
+- What's already been done (inventory, leaderboard coverage)
+- What's deferred or open (questions the user hasn't answered, sources that failed)
+- What the next-session TODOs are
+- User-specific preferences
+
+**Do not re-research or re-ask about things already answered there.** If STATUS.md says "OpenAI site returns 403 — use arxiv + HF mirrors", do that immediately instead of trying OpenAI first.
+
+At **end of session**, update `STATUS.md`: increment the session counter, refresh inventory counts, add new open questions / TODOs / deferred items, then commit as `Refresh STATUS.md (session N)`.
 
 ## Golden rules
 

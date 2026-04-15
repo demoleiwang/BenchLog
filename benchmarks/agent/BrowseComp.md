@@ -34,15 +34,30 @@ _Source: [arXiv:2504.12516](https://arxiv.org/abs/2504.12516)._
 
 ## Leaderboard (snapshot)
 
-| Model / Agent | Accuracy | Source-reported-by | Source |
+### BrowseComp (English, 1,266 questions)
+
+| Model / Agent | Accuracy | Source-reported-by / note | Source |
 |---|---:|---|---|
-| GPT-5 (thinking) | 54.9% | MiniMax-M2 card | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| MiroThinker-1.7 (235B, Qwen3-thinking fine-tune) | 74.0% | own release, 2026-04 | [huggingface.co/miromind-ai/MiroThinker-1.7](https://huggingface.co/miromind-ai/MiroThinker-1.7) |
+| MiroThinker-v1.5-235B | 69.8% | own release, 2026-03 | [github.com/MiroMindAI/MiroThinker](https://github.com/MiroMindAI/MiroThinker) |
+| GPT-5 (thinking) | 54.9% | MiniMax-M2 card, 2025-10 | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
+| MiroThinker-v1.0-72B | 47.1% | own release, 2026-01 | [github.com/MiroMindAI/MiroThinker](https://github.com/MiroMindAI/MiroThinker) |
 | MiniMax-M2 | 44% | own card, 2025-10 | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
 | Claude Sonnet 4.5 | 19.6% | MiniMax-M2 card | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
 | Claude Sonnet 4 | 12.2% | MiniMax-M2 card | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
 | Gemini 2.5 Pro | 9.9% | MiniMax-M2 card | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
 
-_The ~5× gap between GPT-5's 54.9% and MiniMax-M2's 44% vs. the others reflects BrowseComp's bias toward agents with deep-research scaffolding (persistent browsing + multi-step synthesis). Base-model scores without browsing scaffolds collapse toward zero._
+### BrowseComp-ZH (Chinese companion set — sibling benchmark, cited together)
+
+| Model / Agent | Accuracy | Source |
+|---|---:|---|
+| MiroThinker-1.7 (235B) | 75.3% | [huggingface.co/miromind-ai/MiroThinker-1.7](https://huggingface.co/miromind-ai/MiroThinker-1.7) |
+| MiroThinker-v1.5-235B | 71.5% | [github.com/MiroMindAI/MiroThinker](https://github.com/MiroMindAI/MiroThinker) |
+| MiroThinker-v1.0-72B | 55.6% | [github.com/MiroMindAI/MiroThinker](https://github.com/MiroMindAI/MiroThinker) |
+
+_MiroThinker-1.7 is currently SOTA among open-source on BrowseComp-ZH per its own release notes. The model is a Qwen3-235B-A22B-Thinking-2507 fine-tune released by MiroMind in April 2026. Paper: [arXiv:2603.15726](https://arxiv.org/abs/2603.15726) — "MiroThinker-1.7 & H1: Towards Heavy-Duty Research Agents via Verification"._
+
+_The ~5× gap between deep-research agents (MiroThinker, GPT-5 thinking, MiniMax-M2) and chat-tuned frontier models (Claude / Gemini without research scaffolds) reflects BrowseComp's bias toward persistent multi-hop browsing. Base-model scores without browsing scaffolds collapse toward zero._
 
 ## Critique & known issues
 
@@ -61,4 +76,4 @@ _The ~5× gap between GPT-5's 54.9% and MiniMax-M2's 44% vs. the others reflects
 
 ## Update log
 
-- 2026-04-15: Initial entry; seeded leaderboard with 5 rows (GPT-5, MiniMax-M2, Claude 4/4.5, Gemini 2.5 Pro) from MiniMax-M2 model card
+- 2026-04-15: Initial entry; seeded leaderboard with 5 rows (GPT-5, MiniMax-M2, Claude 4/4.5, Gemini 2.5 Pro) from MiniMax-M2 model card; later same day added MiroThinker family (1.7 = 74.0%, v1.5 = 69.8%, v1.0 = 47.1%) and BrowseComp-ZH companion table from MiroMind AI's GitHub README and HF card

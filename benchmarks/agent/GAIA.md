@@ -42,6 +42,9 @@ Rows below are labelled with the modality variant. **GAIA (text only)** is the t
 
 | Model / Agent | Variant | Accuracy | Source |
 |---|---|---:|---|
+| MiroThinker-1.7 (235B) | GAIA-Val-165 | 82.7% | [huggingface.co/miromind-ai/MiroThinker-1.7](https://huggingface.co/miromind-ai/MiroThinker-1.7) |
+| MiroThinker-v1.5-235B | GAIA-Val-165 | 80.8% | [github.com/MiroMindAI/MiroThinker](https://github.com/MiroMindAI/MiroThinker) |
+| MiroThinker-v1.0-72B | GAIA-Text-103 | 81.9% | [github.com/MiroMindAI/MiroThinker](https://github.com/MiroMindAI/MiroThinker) |
 | GPT-5 | text only | 76.4% | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
 | MiniMax-M2 | text only | 75.7% | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
 | Claude Sonnet 4.5 | text only | 71.2% | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |

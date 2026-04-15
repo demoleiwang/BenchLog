@@ -38,7 +38,10 @@ Values from the project's own reporting (see [lastexam.ai](https://lastexam.ai/)
 
 | Model | Accuracy | Source |
 |---|---:|---|
+| MiroThinker-1.7 (235B) | 42.9% (HLE-Text) | [huggingface.co/miromind-ai/MiroThinker-1.7](https://huggingface.co/miromind-ai/MiroThinker-1.7) |
+| MiroThinker-v1.5-235B | 39.2% (HLE-Text) | [github.com/MiroMindAI/MiroThinker](https://github.com/MiroMindAI/MiroThinker) |
 | Gemini 3 Pro | 38.3% | [lastexam.ai](https://lastexam.ai/) |
+| MiroThinker-v1.0-72B | 37.7% (HLE-Text) | [github.com/MiroMindAI/MiroThinker](https://github.com/MiroMindAI/MiroThinker) |
 | GPT-5 | 25.3% | [lastexam.ai](https://lastexam.ai/) |
 | Grok 4 | 24.5% | [lastexam.ai](https://lastexam.ai/) |
 | Claude 4.5 Sonnet | 13.7% | [lastexam.ai](https://lastexam.ai/) |
