@@ -2,7 +2,7 @@
 
 _This file is auto-loaded at the start of every Claude session via the `SessionStart` hook. Read it first to know what's already been done and what's pending. Claude MUST update this file at the end of every working session._
 
-_Last updated: 2026-04-15 (session 1, Run 4 end — 4 refresh cycles in one session)_
+_Last updated: 2026-04-15 (session 1, Run 5 end — 5 refresh cycles in one session)_
 
 ---
 
@@ -10,7 +10,7 @@ _Last updated: 2026-04-15 (session 1, Run 4 end — 4 refresh cycles in one sess
 
 - **URL**: https://github.com/demoleiwang/BenchLog
 - **Branch**: `main`
-- **Entries**: **33 benchmarks** across 6 active categories; 1 digest (2026-04-15, 4 runs appended); cross-benchmark overview with 14 frontier models.
+- **Entries**: **36 benchmarks** across **7 active categories** (safety just opened); 1 digest (2026-04-15, 5 runs appended); cross-benchmark overview with 14 frontier models.
 - **Architecture**: pure markdown + CLAUDE.md; Claude Code is the runtime. No Python, no scheduler, no scrapers.
 
 ## Owner / audience
@@ -29,19 +29,19 @@ _Last updated: 2026-04-15 (session 1, Run 4 end — 4 refresh cycles in one sess
 6. **Benchmark-relevance bar is high.**
 7. **Label scaffold / harness on every agent-benchmark score** — "BrowseComp 78.4%" means nothing without "(Agent Swarm)".
 
-## Current benchmark inventory (33)
+## Current benchmark inventory (36)
 
 | Category | Count | Entries |
 |---|---:|---|
-| Agent | 19 | GAIA, τ-bench (+ τ²-bench + TAU2 overall), OSWorld, WebArena, BrowseComp (+ BrowseComp-ZH), SWE-Lancer, MLE-Bench, GDPval, Terminal-Bench, BFCL, AgentBench, **DeepSearchQA, WideSearch, DeepPlanning, VitaBench, Tool-Decathlon, MCPMark, MCP-Bench, DeepResearch-Bench** |
-| Coding | 6 | HumanEval, SWE-bench Verified, SWE-bench Pro, **Multi-SWE-Bench**, LiveCodeBench, ArtifactsBench |
+| Agent | 21 | GAIA, τ-bench (+ τ²-bench + TAU2 overall), OSWorld, WebArena, BrowseComp (+ BrowseComp-ZH), SWE-Lancer, MLE-Bench, GDPval, Terminal-Bench, BFCL, AgentBench, DeepSearchQA, WideSearch, DeepPlanning, VitaBench, Tool-Decathlon, MCPMark, MCP-Bench, DeepResearch-Bench, **ClawBench, SkillsBench** |
+| Coding | 6 | HumanEval, SWE-bench Verified, SWE-bench Pro, Multi-SWE-Bench, LiveCodeBench, ArtifactsBench |
 | Reasoning | 4 | GPQA Diamond, AIME 2025 (+ 2024 companion), ARC-AGI-2, HLE |
-| Knowledge | 2 | MMLU-Pro, **SuperGPQA** |
+| Knowledge | 2 | MMLU-Pro, SuperGPQA |
 | Multimodal | 2 | MMMU, MMMU-Pro |
 | Long-context | 1 | RULER |
-| Safety | 0 | (directory exists, empty) |
+| **Safety** | 1 | **ClawsBench** (first entry — category activated) |
 
-Round 4 (2026-04-15) additions in **bold** — 9 new benchmarks focused on agent / deep-research / multilingual coding per Lei's request.
+Round 5 (2026-04-15) additions in **bold** — Claw family (ClawBench + ClawsBench) + SkillsBench. Safety category activated.
 
 ## Leaderboard coverage (sources ingested across all runs)
 
@@ -69,6 +69,18 @@ Round 4 (2026-04-15) additions in **bold** — 9 new benchmarks focused on agent
 - BFCL (gorilla.cs.berkeley.edu/leaderboard.html)
 
 **Frontier models now covered in leaderboards/overview.md:** Kimi K2.5, Qwen3.5-397B, GPT-5.2 (Kimi/Qwen-reported), Claude 4.5 Opus, Gemini 3 Pro, DeepSeek V3.2, Meta Muse Spark, Claude Sonnet 4/4.5, MiroThinker 1.7/v1.5/v1.0, Kimi K2, MiniMax-M2, GLM-4.5, Qwen3-Instruct-2507, DeepSeek-V3, LLaMA-3.1-405B, GPT-4o, GPT-4.1, Claude 3.5 Sonnet.
+
+## Confirmed model versions (for cross-reference)
+
+Versions confirmed via benchmark pages / leaderboards in session 1:
+
+- **Claude Opus 4.6** (2026-04) — top on PinchBench/SkillsBench at 93.3% best. Confirmed existing.
+- **Claude Sonnet 4.6** (2026-04) — ClawBench paper reports 33.3%. Confirmed existing.
+- **GPT-5.4 / GPT-5.4 Thinking / GPT-5.4 Pro** — system card 2026-03-05, benchmark data sparse. PinchBench shows GPT-5.4 at 90.5%. Lei's "89+" memory likely from PinchBench, not BrowseComp.
+- **GPT-5.2** — 2025/early 2026, widely used in Kimi K2.5 and Qwen 3.5 comparison tables.
+- **MiniMax M2.7** — confirmed via PinchBench (89.8% best). Lei mentioned "minimax2.7" early in session 1 — now verified it exists.
+- **Qwen 3.5-27B** — smaller variant, on PinchBench at 90.0% best. (The 397B flagship was already in the inventory.)
+- **Trinity Large Thinking** (Arcee AI) — new frontier contender, PinchBench 91.9%.
 
 ## Known sources that FAIL WebFetch
 
