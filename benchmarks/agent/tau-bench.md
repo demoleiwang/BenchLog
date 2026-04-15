@@ -1,0 +1,62 @@
+# τ-bench (tau-bench)
+
+> A benchmark for *reliable* tool-using agents: the same task is run k times and "pass@k" (or pass^k, consistency) is reported. Frontier tool-calling agents score below 50% on individual runs, and below 25% when asked to be consistent across 8 runs.
+
+|  |  |
+|---|---|
+| **Category** | agent / tool use / multi-turn dialogue |
+| **Released** | 2024-06-17 |
+| **Paper** | [arXiv:2406.12045](https://arxiv.org/abs/2406.12045) |
+| **Project / Code** | [github.com/sierra-research/tau-bench](https://github.com/sierra-research/tau-bench) |
+| **Maintainer** | Sierra Research (Yao, Shinn, Razavi, Narasimhan) |
+| **Size** | two domains (airline customer service + retail); task count per domain _unknown_ from the abstract |
+| **License** | _unknown_ |
+| **Status** | active; cited heavily in 2025 for "agents are unreliable" evidence |
+
+## What it measures
+
+Whether a tool-calling agent can follow domain-specific rules in multi-turn interactions with a simulated user, and — crucially — do so *consistently* across repeated trials.
+
+The novel contribution is the evaluation protocol. Instead of reporting a single-run success rate, τ-bench emphasises **pass^k**: the probability that the agent gets a task right on *all* of k independent runs. This surfaces the gap between "agents sometimes succeed" and "agents reliably succeed" — the gap that matters for production deployment.
+
+The paper reports that GPT-4o-class agents succeed on < 50% of tasks on a single run, and that retail-domain pass@8 drops below 25%. This finding — that reliability is far worse than sample-average success — became one of the most-cited results in the 2024–2025 agent literature.
+
+## Task format
+
+- **Input:** a simulated user turn with a goal expressed in natural language. The agent interacts over multiple turns, using a defined tool catalog (API calls representing the domain's DB).
+- **Output:** a final database state after the conversation.
+- **Scoring:** ground-truth database state at conversation end vs. agent-produced state. Aggregated as **pass@k** (at least one correct in k) and **pass^k** (all k correct). Pass^k is the benchmark's headline.
+- **Splits:** airline and retail. The follow-up τ²-bench added further domains.
+
+## Example
+
+Retail domain: a user messages an assistant asking to return one item from a recent order, keep another, and apply a discount code that may or may not be valid per the store's rules. The agent must call the right APIs in the right order, apply policy correctly, and arrive at the correct final cart / return state.
+
+_Source: [github.com/sierra-research/tau-bench](https://github.com/sierra-research/tau-bench) — sample trajectories in the repo README._
+
+## Leaderboard (snapshot)
+
+Headline numbers from the original paper; add source-linked rows as new agents report.
+
+| Model / Agent | Metric | Score | Source |
+|---|---|---:|---|
+| GPT-4o (function calling) | pass@1 (retail) | < 50% | [arXiv:2406.12045](https://arxiv.org/abs/2406.12045) |
+| GPT-4o (function calling) | pass^8 (retail) | < 25% | [arXiv:2406.12045](https://arxiv.org/abs/2406.12045) |
+
+## Critique & known issues
+
+- **Simulated users are not real users.** The user-simulator is itself an LLM; its realism bounds what the benchmark can claim about production behaviour.
+- **Only two domains.** Airline and retail policy coverage is narrow. τ²-bench added more, but cross-domain generalisation claims remain tentative.
+- **Pass^k is a strict metric.** It captures *consistency* rather than raw capability; a model that works 70% of the time has pass^8 of ~6%, which looks alarming but might still be useful in a human-in-the-loop setting.
+- **Tool-schema sensitivity.** Agents are very sensitive to API schema choices; small format changes shift results several points.
+
+## Related benchmarks
+
+- [GAIA](GAIA.md) — short-answer assistant tasks, no consistency metric
+- [OSWorld](OSWorld.md) — GUI-grounded computer use
+- AgentBench — broader cross-domain agent suite
+- [BrowseComp](BrowseComp.md) — browsing-specific, different slice
+
+## Update log
+
+- 2026-04-15: Initial entry
