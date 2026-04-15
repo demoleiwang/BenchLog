@@ -106,6 +106,18 @@ Edit `README.md`:
 - "Recently updated" section: list up to 5 most-recently-touched benchmark entries.
 - Keep the section small (≤10 items each).
 
+### Step 7.5 — Validate
+
+Run the linter on everything you touched:
+
+```bash
+bash .claude/hooks/lint-benchmark-entry.sh <files-you-touched>
+```
+
+(It also runs automatically via the `PostToolUse` hook in `.claude/settings.json` after every Write/Edit on benchmarks/digests files. The manual call is a final safety net before commit.)
+
+If errors are reported, fix them before committing. Warnings are advisory but should be addressed when they're easy.
+
 ### Step 8 — Commit and push
 
 Make **small, semantic commits**:
@@ -153,6 +165,16 @@ Print a short summary:
 - If you can't decide whether a paper deserves a full entry vs. a digest note, default to digest note. Promotion is easy; deletion is awkward.
 - If a source URL fails to fetch, log it in the digest under "Sources scanned" with a note, do not silently skip.
 - If git operations fail, stop and surface the error to the user. Do not force-push.
+
+## Tests
+
+The validation suite at `tests/run-fixtures.sh` exercises the linter against good/bad fixtures. If you touch the linter, run:
+
+```bash
+bash tests/run-fixtures.sh
+```
+
+Must report 0 failures before you commit a linter change.
 
 ## What NOT to do
 

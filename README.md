@@ -1,7 +1,8 @@
 # BenchLog
 
 > A living, Claude-Code-maintained knowledge base of important AI / LLM / agent benchmarks.
-> Maintained by [@demoleiwang](https://github.com/demoleiwang). Read the [PLAN](PLAN.md) for the design.
+> Maintained by [@demoleiwang](https://github.com/demoleiwang).
+> Design: [PLAN.md](PLAN.md) · Pipeline: [TECH_PIPELINE.md](TECH_PIPELINE.md) · Operating manual: [CLAUDE.md](CLAUDE.md)
 
 ## Why this exists
 
