@@ -38,6 +38,10 @@ Scores are meaningless without a date-window. Always cite the window. Rows below
 
 | Model | Score (pass@1) | Window / note | Source |
 |---|---:|---|---|
+| Gemini 3.1 Pro (thinking high, Kimi-reported) | 91.7 | v6, Pass@1 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Kimi K2.6 | 89.6 | v6, Pass@1 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Claude Opus 4.6 (max effort, Kimi-reported) | 88.8 | v6, Pass@1 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Hy3-preview base (Tencent Hunyuan 3) | 34.86 | v6, 1-shot, base model | [huggingface.co/tencent/Hy3-preview](https://huggingface.co/tencent/Hy3-preview) |
 | Gemini 3 Pro (Kimi-reported) | 87.4 | v6, Pass@1 | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
 | GPT-5.2 (Qwen-reported) | 87.7 | v6 | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
 | Kimi K2.5 | 85.0 | v6, Pass@1 | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
@@ -80,3 +84,4 @@ _"AA composite" refers to Artificial Analysis's blended-window LiveCodeBench met
 
 - 2026-04-15: Initial entry; seeded leaderboard with 13 model rows from DeepSeek-V3, Kimi K2, and MiniMax-M2 model cards
 - 2026-04-15 (session 1 extension): added 7 frontier rows — GPT-5.2 (87.7), Gemini 3 Pro (87.4), Kimi K2.5 (85.0), Claude 4.5 Opus (84.8/82.2), Qwen3.5-397B (83.6), DeepSeek V3.2 (83.3)
+- 2026-04-24: added 4 rows — **Gemini 3.1 Pro 91.7 (new SOTA)**, Kimi K2.6 89.6, Claude Opus 4.6 88.8, Hy3-preview base 34.86. Sources: Kimi K2.6 and Hy3-preview model cards.
