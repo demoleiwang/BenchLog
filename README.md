@@ -43,11 +43,12 @@ No PDFs are stored. Every claim links to its source.
 
 ### Latest digests
 
+- [2026-04-24](digests/2026-04-24.md) — four frontier releases in two weeks: Claude Mythos Preview, Kimi K2.6, Hy3-preview (Tencent Hunyuan 3), GPT-5.5. Mythos is new SOTA on SWE-bench Verified / GPQA / HLE / OSWorld; GPT-5.5 Pro tops BrowseComp at 90.1%. DeepSeek V4 still unreleased.
 - [2026-04-15](digests/2026-04-15.md) — bootstrap seed (17 entries); first daily-update cycle test; flagged LARY / ClawGUI / Habitat-GS as trending
 
 ### Recently updated entries
 
-- [MMMU](benchmarks/multimodal/MMMU.md) · [MMLU-Pro](benchmarks/knowledge/MMLU-Pro.md) · [GDPval](benchmarks/agent/GDPval.md) · [MLE-Bench](benchmarks/agent/MLE-Bench.md) · [SWE-Lancer](benchmarks/agent/SWE-Lancer.md)
+- [SWE-bench Verified](benchmarks/coding/SWE-bench-Verified.md) · [HLE](benchmarks/reasoning/HLE.md) · [BrowseComp](benchmarks/agent/BrowseComp.md) · [Terminal-Bench](benchmarks/agent/Terminal-Bench.md) · [GPQA Diamond](benchmarks/reasoning/GPQA-Diamond.md)
 
 ## Repository layout
 
