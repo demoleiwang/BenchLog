@@ -42,6 +42,16 @@ Reported frontier scores from the paper + subsequent updates; cite the source an
 
 | Model | Score | Setting | Source |
 |---|---:|---|---|
+| Gemini 3.1 Pro (thinking high, w/ python, Kimi-reported) | 85.3 | standard, w/ python | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Gemini 3.1 Pro (thinking high, Kimi-reported) | 83.0 | standard | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| GPT-5.4 (xhigh, w/ python, Kimi-reported) | 82.1 | standard, w/ python | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| GPT-5.5 (with tools, OpenAI) | 83.2 | MMMU Pro w/ tools | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
+| GPT-5.5 (no tools, OpenAI) | 81.2 | MMMU Pro no tools | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
+| GPT-5.4 (xhigh, Kimi-reported) | 81.2 | standard | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Kimi K2.6 (w/ python) | 80.1 | standard, w/ python | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Kimi K2.6 | 79.4 | standard | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Claude Opus 4.6 (max effort, w/ python, Kimi-reported) | 77.3 | standard, w/ python | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Claude Opus 4.6 (max effort, Kimi-reported) | 73.9 | standard | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
 | Gemini 3 Pro (Qwen-reported) | 81.0 | standard | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
 | GPT-5.2 (Qwen-reported / Kimi-reported) | 79.5 | standard | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
 | Qwen3.5-397B-A17B | 79.0 | standard | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
@@ -70,3 +80,4 @@ _Newer model launches (Claude 4 series, GPT-5, Gemini 3 Pro) often report MMMU-P
 
 - 2026-04-15: Initial entry
 - 2026-04-15 (session 1 extension): seeded leaderboard with 5 frontier rows (Gemini 3 Pro 81.0, GPT-5.2 79.5, Qwen3.5-397B 79.0, Kimi K2.5 78.5, Claude 4.5 Opus 74.0/70.6) from Kimi K2.5 and Qwen3.5 cards
+- 2026-04-24: added 10 rows from Kimi K2.6 card + GPT-5.5 launch — **Gemini 3.1 Pro 85.3 w/ python (new SOTA)**, GPT-5.5 81.2 / 83.2 (no tools / w/ tools), GPT-5.4 81.2 / 82.1, Kimi K2.6 79.4 / 80.1, Claude Opus 4.6 73.9 / 77.3. Vision benchmarks now routinely split into no-tool vs with-python-tool configurations.
