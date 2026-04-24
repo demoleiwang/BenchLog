@@ -42,6 +42,14 @@ Most-recent-first. Numbers vary with prompt style (CoT vs. direct, Avg@8 vs. Pas
 
 | Model | Accuracy | Metric / source-reported-by | Source |
 |---|---:|---|---|
+| Claude Mythos Preview | 94.6% | Anthropic internal, 2026-04 | [red.anthropic.com/2026/mythos-preview](https://red.anthropic.com/2026/mythos-preview/) |
+| Gemini 3.1 Pro (thinking high, Kimi-reported) | 94.3% | Kimi K2.6 card | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Claude Opus 4.7 (OpenAI-reported) | 94.2% | GPT-5.5 launch | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
+| GPT-5.5 | 93.6% | OpenAI launch, 2026-04-23 | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
+| GPT-5.4 (xhigh, Kimi-reported) | 92.8% | Kimi K2.6 card | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Claude Opus 4.6 (max effort, Kimi-reported) | 91.3% | Kimi K2.6 card | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Kimi K2.6 | 90.5% | self-reported, 2026-04-20 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Hy3-preview (Tencent Hunyuan 3) | 87.2% | self-reported, 2026-04 | [huggingface.co/tencent/Hy3-preview](https://huggingface.co/tencent/Hy3-preview) |
 | GPT-5.2 (Kimi-reported) | 92.4% | — | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
 | Gemini 3 Pro (Kimi-reported) | 91.9% | — | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
 | Qwen3.5-397B-A17B | 88.4% | self-reported | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
@@ -80,3 +88,4 @@ _DeepSeek-V3 appears twice (68.4 vs 59.1) because Kimi K2's team re-ran it Avg@8
 
 - 2026-04-15: Initial entry; seeded leaderboard with 10 model rows from DeepSeek-V3 and Kimi K2 model cards
 - 2026-04-15 (session 1 extension): added 6 frontier rows — GPT-5.2 (92.4), Gemini 3 Pro (91.9), Qwen3.5-397B (88.4), Kimi K2.5 (87.6), Claude 4.5 Opus (87.0), DeepSeek V3.2 (82.4)
+- 2026-04-24: added 8 rows — **Claude Mythos Preview 94.6% (new SOTA)**, Gemini 3.1 Pro 94.3%, Claude Opus 4.7 94.2% (OpenAI-reported), GPT-5.5 93.6%, GPT-5.4 92.8% (Kimi-reported), Claude Opus 4.6 91.3% (Kimi-reported), Kimi K2.6 90.5%, Hy3-preview 87.2%. Ceiling at ~94–95% now dense; benchmark is near-saturated for frontier models.

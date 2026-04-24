@@ -40,7 +40,19 @@ ARC Prize publishes both a public-eval leaderboard and a private-track leaderboa
 
 | Model / System | Accuracy | Track | Source |
 |---|---:|---|---|
-| _seed pending_ | _unknown_ | _unknown_ | [arcprize.org](https://arcprize.org/) |
+| GPT-5.5 | 85.0% | ARC-AGI-2 Verified | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
+| Gemini 3.1 Pro (OpenAI-reported) | 77.1% | ARC-AGI-2 Verified | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
+| Claude Opus 4.7 (OpenAI-reported) | 75.8% | ARC-AGI-2 Verified | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
+| GPT-5.4 (OpenAI-reported) | 73.3% | ARC-AGI-2 Verified | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
+
+### ARC-AGI-1 — companion data (per GPT-5.5 launch)
+
+| Model | Accuracy | Track | Source |
+|---|---:|---|---|
+| Gemini 3.1 Pro (OpenAI-reported) | 98.0% | ARC-AGI-1 Verified | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
+| GPT-5.5 | 95.0% | ARC-AGI-1 Verified | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
+| GPT-5.4 (OpenAI-reported) | 93.7% | ARC-AGI-1 Verified | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
+| Claude Opus 4.7 (OpenAI-reported) | 93.5% | ARC-AGI-1 Verified | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
 
 _ARC-AGI-1 has been effectively cracked by custom program-synthesis systems stacked on frontier LLMs; ARC-AGI-2 remains substantially harder and is the foundation's current headline metric._
 
@@ -59,3 +71,4 @@ _ARC-AGI-1 has been effectively cracked by custom program-synthesis systems stac
 ## Update log
 
 - 2026-04-15: Initial entry
+- 2026-04-24: Seeded leaderboard with 4 ARC-AGI-2 Verified rows and 4 ARC-AGI-1 Verified rows from OpenAI's GPT-5.5 launch (2026-04-23) — **GPT-5.5 leads ARC-AGI-2 at 85.0%**, a ~12 pt jump over GPT-5.4 (73.3%). Gemini 3.1 Pro tops ARC-AGI-1 at 98%.
