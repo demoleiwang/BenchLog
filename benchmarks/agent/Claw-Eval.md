@@ -44,6 +44,14 @@ _Source: [arXiv:2604.06132](https://arxiv.org/abs/2604.06132) and [claw-eval.git
 
 | Model / Agent | Score | Source |
 |---|---:|---|
+| Claude Opus 4.6 (max effort, pass@3, Kimi-reported) | 82.4 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Gemini 3.1 Pro (thinking high, pass@3, Kimi-reported) | 82.9 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Kimi K2.6 (pass@3) | 80.9 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| GPT-5.4 (xhigh, pass@3, Kimi-reported) | 78.4 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Claude Opus 4.6 (max effort, pass^3, Kimi-reported) | 70.4 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Kimi K2.6 (pass^3) | 62.3 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| GPT-5.4 (xhigh, pass^3, Kimi-reported) | 60.3 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Gemini 3.1 Pro (thinking high, pass^3, Kimi-reported) | 57.8 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
 | Step 3.5 Flash (#2 spot at launch per dev coverage) | _see source_ | [Claw-Eval launch coverage](https://dev.to/sky_05/new-benchmark-for-open-source-agents-what-is-claw-eval-how-step-35-flash-secured-the-2-spot-592d) |
 | _full leaderboard pending paper-table extraction_ | _unknown_ | [claw-eval.github.io](https://claw-eval.github.io/) |
 
@@ -67,3 +75,4 @@ _Live leaderboard maintained on the project site; fetch during daily update for 
 ## Update log
 
 - 2026-04-15: Initial entry; sparse leaderboard pending paper-table extraction
+- 2026-04-24: seeded 8 frontier rows from Kimi K2.6 card — Claude Opus 4.6 (pass@3 82.4 / pass^3 70.4), Gemini 3.1 Pro (pass@3 82.9 / pass^3 57.8), Kimi K2.6 (pass@3 80.9 / pass^3 62.3), GPT-5.4 (pass@3 78.4 / pass^3 60.3). pass^3 (all-3-correct) reveals Opus 4.6 is the most consistent; Kimi K2.6 falls to 62.3. Sources: Kimi K2.6 model card.

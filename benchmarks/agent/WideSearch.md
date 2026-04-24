@@ -40,6 +40,8 @@ Rows below reflect **item-F1** (per the benchmark's convention); scaffold matter
 
 | Model / Agent | item-F1 | Scaffold / note | Source |
 |---|---:|---|---|
+| Kimi K2.6 (item-F1) | 80.8 | self-reported, 2026-04-20 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Hy3-preview (Tencent Hunyuan 3) | 70.2 | self-reported, 2026-04 | [huggingface.co/tencent/Hy3-preview](https://huggingface.co/tencent/Hy3-preview) |
 | Kimi K2.5 (Agent Swarm) | 79.0 | Agent Swarm scaffold | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
 | GPT-5.2 (Qwen-reported) | 76.8 | — | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
 | Claude 4.5 Opus (Kimi-reported / Qwen-reported) | 76.2 / 76.4 | — | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
@@ -69,3 +71,4 @@ _Note: item-F1 (per-cell F1) and overall success rate (per-task binary) are very
 ## Update log
 
 - 2026-04-15: Initial entry; seeded leaderboard with 8 rows from Kimi K2.5 and Qwen3.5 model cards + paper baseline
+- 2026-04-24: added 2 rows — **Kimi K2.6 80.8 (new SOTA, item-F1)** and Hy3-preview 70.2. Sources: Kimi K2.6 and Hy3-preview model cards.

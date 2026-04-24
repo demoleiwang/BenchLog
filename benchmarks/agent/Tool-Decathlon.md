@@ -35,6 +35,13 @@ _Source: [arXiv:2510.25726](https://arxiv.org/abs/2510.25726)._
 
 | Model | Score | Source-reported-by | Source |
 |---|---:|---|---|
+| GPT-5.5 (Toolathlon) | 55.6 | OpenAI launch, 2026-04-23 | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
+| GPT-5.4 (OpenAI-reported) | 54.6 | GPT-5.5 launch | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
+| GPT-5.4 (xhigh, Kimi-reported, Toolathlon) | 54.6 | Kimi K2.6 card | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Kimi K2.6 (Toolathlon) | 50.0 | self-reported, 2026-04-20 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Gemini 3.1 Pro (thinking high, Kimi-reported, Toolathlon) | 48.8 | Kimi K2.6 card | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Gemini 3.1 Pro (OpenAI-reported, Toolathlon) | 48.8 | GPT-5.5 launch | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
+| Claude Opus 4.6 (max effort, Kimi-reported, Toolathlon) | 47.2 | Kimi K2.6 card | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
 | Claude-4.5-Sonnet | 38.6% (avg 20.2 tool-calling turns/task) | paper | [arXiv:2510.25726](https://arxiv.org/abs/2510.25726) |
 | GPT-5.2 (Qwen-reported) | 43.8 | — | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
 | Claude 4.5 Opus (Qwen-reported) | 43.5 | — | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
@@ -62,3 +69,4 @@ _Note the ~20-point gap between Claude-4.5-Sonnet (38.6%) and the top open-weigh
 ## Update log
 
 - 2026-04-15: Initial entry; seeded leaderboard with 6 rows from the launch paper and Qwen3.5 card
+- 2026-04-24: added 7 rows reporting the **Toolathlon** variant (same benchmark, alt name in Kimi / OpenAI tables) — **GPT-5.5 55.6 (new SOTA)**, GPT-5.4 54.6, Kimi K2.6 50.0, Gemini 3.1 Pro 48.8, Claude Opus 4.6 47.2. Sources: OpenAI GPT-5.5 launch, Kimi K2.6 card.

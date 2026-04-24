@@ -36,6 +36,10 @@ _Source: [huggingface.co/papers/2509.24002](https://huggingface.co/papers/2509.2
 
 | Model | pass@1 | pass^4 | Source |
 |---|---:|---:|---|
+| GPT-5.4 (xhigh, Kimi-reported) | 62.5 | — | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Claude Opus 4.6 (max effort, Kimi-reported) | 56.7 | — | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Gemini 3.1 Pro (thinking high, Kimi-reported) | 55.9 | — | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Kimi K2.6 | 55.9 | — | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
 | GPT-5.2 (Qwen-reported) | 57.5 | — | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
 | gpt-5-medium (paper) | 52.56 | 33.86 | [huggingface.co/papers/2509.24002](https://huggingface.co/papers/2509.24002) |
 | Gemini 3 Pro (Qwen-reported) | 53.9 | — | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
@@ -62,3 +66,4 @@ _pass^4 (all 4 runs correct) is substantially stricter than pass@1 — gpt-5-med
 ## Update log
 
 - 2026-04-15: Initial entry; seeded leaderboard with paper baselines + 4 Qwen-reported frontier rows
+- 2026-04-24: added 4 rows from Kimi K2.6 card — GPT-5.4 (xhigh) 62.5, Claude Opus 4.6 56.7, Gemini 3.1 Pro 55.9, Kimi K2.6 55.9. GPT-5.4 leads Kimi-reported table; all rows re-evaluated by Kimi so not directly comparable to Qwen-reported numbers above.

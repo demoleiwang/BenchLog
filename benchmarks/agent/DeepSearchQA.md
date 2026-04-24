@@ -36,6 +36,14 @@ _Source: [arXiv:2601.20975](https://arxiv.org/abs/2601.20975) · dataset viewer 
 
 | Model | Score | Source-reported-by | Source |
 |---|---:|---|---|
+| Kimi K2.6 (f1-score) | 92.5 | self-reported, 2026-04-20 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Claude Opus 4.6 (max effort, f1, Kimi-reported) | 91.3 | Kimi K2.6 card | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Kimi K2.6 (accuracy) | 83.0 | self-reported, 2026-04-20 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Gemini 3.1 Pro (thinking high, f1, Kimi-reported) | 81.9 | Kimi K2.6 card | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Claude Opus 4.6 (max effort, accuracy, Kimi-reported) | 80.6 | Kimi K2.6 card | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| GPT-5.4 (xhigh, f1, Kimi-reported) | 78.6 | Kimi K2.6 card | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| GPT-5.4 (xhigh, accuracy, Kimi-reported) | 63.7 | Kimi K2.6 card | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
+| Gemini 3.1 Pro (thinking high, accuracy, Kimi-reported) | 60.2 | Kimi K2.6 card | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
 | Kimi K2.5 | 77.1 | self-reported | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
 | Claude 4.5 Opus (Kimi-reported) | 76.1 | — | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
 | GPT-5.2 (Kimi-reported) | 71.3 | — | [huggingface.co/moonshotai/Kimi-K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) |
@@ -61,3 +69,4 @@ _Live leaderboard is on [Kaggle](https://www.kaggle.com/benchmarks/google/dsqa).
 ## Update log
 
 - 2026-04-15: Initial entry; seeded leaderboard with 5 rows from Kimi K2.5 model card (Kimi K2.5 77.1; Claude 4.5 Opus 76.1; GPT-5.2 71.3; Gemini 3 Pro 63.2; DeepSeek V3.2 60.9)
+- 2026-04-24: added 8 rows from Kimi K2.6 card — **Kimi K2.6 92.5 f1 / 83.0 acc (new SOTA)**, Claude Opus 4.6 91.3 f1 / 80.6 acc, Gemini 3.1 Pro 81.9 f1 / 60.2 acc, GPT-5.4 78.6 f1 / 63.7 acc. Big jump over Kimi K2.5 (77.1 f1) shows Kimi's deep-search scaffold improving substantially between K2.5 → K2.6.
