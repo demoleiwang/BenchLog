@@ -39,6 +39,9 @@ Values from the project's own reporting (see [lastexam.ai](https://lastexam.ai/)
 | Model | Accuracy | Source |
 |---|---:|---|
 | Claude Mythos Preview (HLE w/ tools) | 64.7% | [red.anthropic.com/2026/mythos-preview](https://red.anthropic.com/2026/mythos-preview/) |
+| DeepSeek V4-Pro Max (HLE w/ tools) | 48.2% | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| DeepSeek V4-Pro Max (HLE Pass@1, no tools) | 37.7% | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| GLM-5.1 Thinking (HLE w/ tools, DS-reported) | 50.4% | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
 | GPT-5.5 Pro (HLE w/ tools) | 57.2% | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
 | Claude Opus 4.7 (HLE w/ tools, OpenAI-reported) | 54.7% | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
 | Kimi K2.6 (HLE-Full w/ tools) | 54.0% | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
@@ -95,3 +98,4 @@ Values from the project's own reporting (see [lastexam.ai](https://lastexam.ai/)
 - 2026-04-15: Initial entry with reported scores from [lastexam.ai](https://lastexam.ai/)
 - 2026-04-15 (session 1 extension): added 10 new rows — Meta Muse Spark (58%, Contemplating mode), Kimi K2.5 (HLE-Full w/ tools 50.2), Qwen3.5-397B (HLE w/ tool 48.3, base 28.7), Gemini 3 Pro (HLE-Verified 48.0), GPT-5.2 / Claude 4.5 Opus / DeepSeek V3.2 (all Kimi-reported), MiroThinker family (v1.0/1.5/1.7)
 - 2026-04-24: added 17 rows from 4 fresh frontier releases — **Claude Mythos Preview 64.7% w/ tools (new SOTA)**, GPT-5.5 Pro w/tools 57.2% / no-tools 43.1%, GPT-5.5 w/tools 52.2% / no-tools 41.4%, Kimi K2.6 HLE-Full 34.7 / w/tools 54.0, Claude Opus 4.7 no-tools 46.9% / w/tools 54.7% (OpenAI-reported), plus Kimi K2.6-reported GPT-5.4 / Opus 4.6 / Gemini 3.1 Pro, and Hy3-preview 30.0%. Sources: red.anthropic.com/2026/mythos-preview, openai.com/introducing-gpt-5-5, Kimi K2.6 and Hy3-preview model cards.
+- 2026-04-28: added 3 DeepSeek-reported rows — DeepSeek V4-Pro Max 37.7 (no tools) / 48.2 (w/ tools), GLM-5.1 Thinking 50.4 (w/ tools, DS-reported). Source: huggingface.co/deepseek-ai/DeepSeek-V4-Pro.
