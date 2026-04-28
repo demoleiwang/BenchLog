@@ -42,6 +42,12 @@ Cross-lab scores use different prompting schemes (direct vs. CoT vs. thinking-mo
 
 | Model | Accuracy | Metric / source-reported-by | Source |
 |---|---:|---|---|
+| Gemini 3.1 Pro (DS-reported) | 91.0 | EM | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| Claude Opus 4.6 (max effort, DS-reported) | 89.1 | EM | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| GPT-5.4 (xHigh, DS-reported) | 87.5 | EM | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| DeepSeek V4-Pro Max | 87.5 | EM | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| Kimi K2.6 Thinking (DS-reported) | 87.1 | EM | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| GLM-5.1 Thinking (DS-reported) | 86.0 | EM | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
 | Gemini 3 Pro (Qwen-reported / Kimi-reported) | 89.8 / 90.1 | — | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
 | Claude 4.5 Opus (Qwen-reported / Kimi-reported) | 89.5 / 89.3 | — | [huggingface.co/Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) |
 | Claude Sonnet 4.5 | 88 | AA composite | [huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) |
@@ -84,3 +90,4 @@ _Note: DeepSeek-V3 appears with two scores (81.2 and 75.9) because the Kimi K2 t
 
 - 2026-04-15: Initial entry; seeded leaderboard with 13 model rows from DeepSeek-V3, Kimi K2, and MiniMax-M2 model cards. Noted the lab-harness divergence for DeepSeek-V3 (81.2 vs 75.9).
 - 2026-04-15 (session 1 extension): added 7 frontier rows — Gemini 3 Pro (89.8/90.1), Claude 4.5 Opus (89.5/89.3), Qwen3.5-397B (87.8), GPT-5.2 (87.4/86.7), Kimi K2.5 (87.1), DeepSeek V3.2 (85.0). Each model that appears in both Kimi K2.5 and Qwen3.5 tables shows both numbers for transparency.
+- 2026-04-28: added 6 DS-reported rows from DeepSeek V4 launch — **Gemini 3.1 Pro 91.0 (new SOTA, EM)**, Opus 4.6 89.1, GPT-5.4 / DeepSeek V4-Pro 87.5, Kimi K2.6 87.1, GLM-5.1 86.0. Source: huggingface.co/deepseek-ai/DeepSeek-V4-Pro.

@@ -38,8 +38,25 @@ _Source: [arXiv:2411.04368](https://arxiv.org/abs/2411.04368) and [arXiv:2509.07
 
 | Model | Score | Variant | Source |
 |---|---:|---|---|
+| Gemini 3.1 Pro (DS-reported) | 75.6 (Pass@1) | SimpleQA Verified | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| DeepSeek V4-Pro Max | 57.9 (Pass@1) | SimpleQA Verified | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| Claude Opus 4.6 (max effort, DS-reported) | 46.2 (Pass@1) | SimpleQA Verified | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| GPT-5.4 (xHigh, DS-reported) | 45.3 (Pass@1) | SimpleQA Verified | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| GLM-5.1 Thinking (DS-reported) | 38.1 (Pass@1) | SimpleQA Verified | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| Kimi K2.6 Thinking (DS-reported) | 36.9 (Pass@1) | SimpleQA Verified | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
 | Gemini 2.5 Pro | F1 = 55.6 | SimpleQA Verified, frontier SOTA at launch | [arXiv:2509.07968](https://arxiv.org/abs/2509.07968) |
 | GPT-5 | < 55.6 (per Verified paper claim Gemini outperforms GPT-5) | SimpleQA Verified | [arXiv:2509.07968](https://arxiv.org/abs/2509.07968) |
+
+### Chinese-SimpleQA — DeepSeek V4 launch table
+
+| Model | Pass@1 | Source |
+|---|---:|---|
+| Gemini 3.1 Pro (DS-reported) | 85.9 | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| DeepSeek V4-Pro Max | 84.4 | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| GPT-5.4 (DS-reported) | 76.8 | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| Claude Opus 4.6 (DS-reported) | 76.4 | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| Kimi K2.6 Thinking (DS-reported) | 75.9 | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| GLM-5.1 Thinking (DS-reported) | 75.0 | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
 
 _Per-model rows pending more-recent extractions; OpenAI's own model launches publish SimpleQA scores. Live leaderboard at [llm-stats.com/benchmarks/simpleqa](https://llm-stats.com/benchmarks/simpleqa)._
 
@@ -61,3 +78,4 @@ _Per-model rows pending more-recent extractions; OpenAI's own model launches pub
 ## Update log
 
 - 2026-04-15: Initial entry (covers both SimpleQA and SimpleQA Verified) with Gemini 2.5 Pro F1=55.6 from Verified paper
+- 2026-04-28: added 6 SimpleQA-Verified rows + 6 Chinese-SimpleQA rows from DeepSeek V4 launch — **Gemini 3.1 Pro 75.6 (new SOTA, Verified)**, DeepSeek V4-Pro Max 57.9, Opus 4.6 46.2, GPT-5.4 45.3, GLM-5.1 38.1, Kimi K2.6 36.9. Chinese-SimpleQA: Gemini 3.1 Pro 85.9 (top), V4-Pro 84.4. Source: huggingface.co/deepseek-ai/DeepSeek-V4-Pro.

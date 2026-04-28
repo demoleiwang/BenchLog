@@ -46,6 +46,8 @@ _Source: [longbench2.github.io](https://longbench2.github.io/)._
 
 | Model / Setting | Accuracy | Source |
 |---|---:|---|
+| DeepSeek V4-Pro Base | 51.5 (1-shot EM) | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| DeepSeek V4-Flash Base | 44.7 (1-shot EM) | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
 | o1-preview (long CoT) | 57.7 | [arXiv:2412.15204](https://arxiv.org/abs/2412.15204) |
 | Best direct-answer model at launch | 50.1 | [arXiv:2412.15204](https://arxiv.org/abs/2412.15204) |
 | Human (15-min, with search) | 53.7 | [arXiv:2412.15204](https://arxiv.org/abs/2412.15204) |
@@ -75,3 +77,4 @@ _2026-frontier models have surpassed the 2024 human baseline (53.7%); Gemini 3 P
 ## Update log
 
 - 2026-04-15: Initial entry; seeded leaderboard with 8 rows from Kimi K2.5 card + paper baselines
+- 2026-04-28: added 2 DeepSeek V4 base-model rows — V4-Pro Base 51.5 (1-shot EM), V4-Flash Base 44.7. Note: these are base-model 1-shot scores, not directly comparable to instruct-model long-CoT rows above. Source: huggingface.co/deepseek-ai/DeepSeek-V4-Pro.
