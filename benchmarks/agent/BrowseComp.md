@@ -39,6 +39,8 @@ _Source: [arXiv:2504.12516](https://arxiv.org/abs/2504.12516)._
 | Model / Agent | Accuracy | Source-reported-by / note | Source |
 |---|---:|---|---|
 | GPT-5.5 Pro | 90.1% | OpenAI launch, 2026-04-23 | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
+| DeepSeek V4-Pro Max | 83.4% | self-reported, 2026-04-24 | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| GLM-5.1 Thinking (DS-reported) | 79.3% | DeepSeek V4 card | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
 | Claude Mythos Preview | 86.9% | Anthropic internal, 2026-04 | [red.anthropic.com/2026/mythos-preview](https://red.anthropic.com/2026/mythos-preview/) |
 | Kimi K2.6 (Agent Swarm scaffold) | 86.3% | self-reported, 2026-04-20 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
 | Gemini 3.1 Pro (thinking high, Kimi-reported) | 85.9% | Kimi K2.6 card | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
@@ -103,3 +105,4 @@ _The ~5× gap between deep-research agents (MiroThinker, GPT-5 thinking, MiniMax
 - 2026-04-15: Initial entry; seeded leaderboard with 5 rows (GPT-5, MiniMax-M2, Claude 4/4.5, Gemini 2.5 Pro) from MiniMax-M2 model card; later same day added MiroThinker family (1.7 = 74.0%, v1.5 = 69.8%, v1.0 = 47.1%) and BrowseComp-ZH companion table from MiroMind AI's GitHub README and HF card
 - 2026-04-15 (session 1 extension): added frontier scaffold-aware rows from Kimi K2.5 and Qwen3.5 cards. **Kimi K2.5 Agent Swarm 78.4%** is current public OSS SOTA; Qwen3.5 at 78.6%. New rows expose scaffold sensitivity: Kimi K2.5 goes 60.6% no-scaffold → 74.9% w/ context mgmt → 78.4% Agent Swarm. Claude 4.5 Opus no-scaffold at 37.0% vs 62.4% self-reported (Qwen-reported) shows same effect. User reported MiroThinker near-90% and GPT-5.4 Pro 89+; neither verifiable from public sources as of this session — flagged in STATUS.md.
 - 2026-04-24: added 10 frontier rows from 4 model releases — **GPT-5.5 Pro 90.1% (new SOTA)**, Claude Mythos Preview 86.9%, Kimi K2.6 Agent Swarm 86.3%, Gemini 3.1 Pro 85.9%, GPT-5.5 84.4%, Claude Opus 4.6 83.7%, Kimi K2.6 (no scaffold) 83.2%, GPT-5.4 82.7%, Claude Opus 4.7 79.3%, Hy3-preview 67.1%. GPT-5.4 Pro "89+" number Lei mentioned in session 1 is now corroborated by GPT-5.5 Pro 90.1%. Sources: OpenAI GPT-5.5 launch, red.anthropic.com/2026/mythos-preview, Kimi K2.6 card, Hy3-preview card.
+- 2026-04-28: added 2 DS-reported rows — DeepSeek V4-Pro Max 83.4%, GLM-5.1 Thinking 79.3%. Source: huggingface.co/deepseek-ai/DeepSeek-V4-Pro.
