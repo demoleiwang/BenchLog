@@ -37,6 +37,9 @@ _Source: [labs.scale.com/papers/swe-bench-pro](https://labs.scale.com/papers/swe
 | Model | pass@1 | Tier / note | Source |
 |---|---:|---|---|
 | Claude Mythos Preview | 77.8 | Anthropic internal, 2026-04 | [red.anthropic.com/2026/mythos-preview](https://red.anthropic.com/2026/mythos-preview/) |
+| Claude Opus 4.7 | 64.3 | Anthropic launch, 2026-04-16 | [anthropic.com/news/claude-opus-4-7](https://www.anthropic.com/news/claude-opus-4-7) |
+| DeepSeek V4-Pro Max | 55.4 | self-reported, 2026-04-24 | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| GLM-5.1 Thinking (DS-reported) | 58.4 | DeepSeek V4 card | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
 | GPT-5.5 | 58.6 | OpenAI launch, 2026-04-23 | [openai.com/index/introducing-gpt-5-5](https://openai.com/index/introducing-gpt-5-5/) |
 | GPT-5.4 (xhigh, Kimi-reported) | 57.7 | Kimi K2.6 card, 2026-04-20 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
 | Kimi K2.6 | 58.6 | self-reported, 2026-04-20 | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
@@ -70,3 +73,4 @@ _Scale Labs' launch write-up notes that "widely used coding models generally sco
 - 2026-04-15: Initial entry; seeded leaderboard with GPT-5 (23.3%) from Scale Labs launch, GLM-4.5 (9.67) from GLM-4.6 model card
 - 2026-04-15 (session 1 extension): added 3 frontier rows from Kimi K2.5 card — GPT-5.2 (55.6), Claude 4.5 Opus (55.4), Kimi K2.5 (50.7). Note the huge jump from the 2025-09 launch figure (23.3%) reflects scaffold + model progress over ~4 months.
 - 2026-04-24: added 6 frontier rows — **Claude Mythos Preview 77.8 (new SOTA)**, GPT-5.5 58.6 (OpenAI launch 2026-04-23), GPT-5.4 57.7 (Kimi-reported), Kimi K2.6 58.6 (self-reported), Gemini 3.1 Pro 54.2, Claude Opus 4.6 53.4. Sources: red.anthropic.com/2026/mythos-preview, OpenAI GPT-5.5 launch, Kimi K2.6 model card.
+- 2026-04-28: added 3 rows — **Claude Opus 4.7 64.3** (Anthropic-reported, +10.9 over Opus 4.6), DeepSeek V4-Pro Max 55.4, GLM-5.1 Thinking 58.4 (DS-reported). Sources: anthropic.com/news/claude-opus-4-7, huggingface.co/deepseek-ai/DeepSeek-V4-Pro.

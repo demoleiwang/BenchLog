@@ -44,6 +44,9 @@ Most-recent-first. Every row has a source link. Harness matters — we label the
 | Model | Harness / note | % Resolved | Source |
 |---|---|---:|---|
 | Claude Mythos Preview | Anthropic internal, 2026-04 | 93.9% | [red.anthropic.com/2026/mythos-preview](https://red.anthropic.com/2026/mythos-preview/) |
+| Claude Opus 4.7 | Anthropic launch, 2026-04-16 | 87.6% | [anthropic.com/news/claude-opus-4-7](https://www.anthropic.com/news/claude-opus-4-7) |
+| DeepSeek V4-Pro Max | self-reported, 2026-04-24 | 80.6% | [huggingface.co/deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) |
+| DeepSeek V4-Flash | aggregator-reported (DeepSeek launch) | 79.0% | [api-docs.deepseek.com/news/news260424](https://api-docs.deepseek.com/news/news260424) |
 | Claude Opus 4.6 (max effort, Kimi-reported) | Kimi K2.6 card, 2026-04-20 | 80.8% | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
 | Gemini 3.1 Pro (thinking high, Kimi-reported) | Kimi K2.6 card, 2026-04-20 | 80.6% | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
 | Kimi K2.6 | self-reported, 2026-04-20 | 80.2% | [huggingface.co/moonshotai/Kimi-K2.6](https://huggingface.co/moonshotai/Kimi-K2.6) |
@@ -95,3 +98,4 @@ _"As reported in X card" means the score was collected by lab X under their own 
 - 2026-04-15: Initial entry; seeded leaderboard with 16 model rows from 4 sources (Anthropic Sonnet 4.5 blog, Kimi K2 model card, DeepSeek-V3 model card, MiniMax-M2 model card)
 - 2026-04-15 (session 1 extension): added 6 frontier rows — Claude 4.5 Opus (80.9%), GPT-5.2 (80.0%), Kimi K2.5 (76.8%), Qwen3.5-397B (76.4%), Gemini 3 Pro (76.2%), DeepSeek V3.2 (73.1%). Sources: Kimi K2.5 and Qwen3.5 model cards.
 - 2026-04-24: added 5 frontier rows — **Claude Mythos Preview 93.9%** (new SOTA, huge leap), Claude Opus 4.6 (max-effort, Kimi-reported) 80.8%, Gemini 3.1 Pro (thinking, Kimi-reported) 80.6%, Kimi K2.6 80.2%, Hy3-preview (Tencent Hunyuan 3) 74.4%. Sources: red.anthropic.com/2026/mythos-preview, huggingface.co/moonshotai/Kimi-K2.6, huggingface.co/tencent/Hy3-preview.
+- 2026-04-28: added 3 rows — **Claude Opus 4.7 87.6%** (Anthropic-reported, primary source resolved — 6.8 pt gain over Kimi-reported Opus 4.6), DeepSeek V4-Pro Max 80.6%, DeepSeek V4-Flash 79.0%. Mythos still SOTA at 93.9%; second tier now Opus 4.7. Sources: anthropic.com/news/claude-opus-4-7, huggingface.co/deepseek-ai/DeepSeek-V4-Pro, api-docs.deepseek.com.
